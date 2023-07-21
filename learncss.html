@@ -10,6 +10,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* Your CSS styles go here */
+            .hidden-content {
+              display: none;
+              margin-top: 10px;
+            }
+            .active-content {
+              display: block;
+            }
+          </style>
+        
 	</head>
 	<body class="is-preload">
 
@@ -65,16 +76,16 @@ font-size: 24px;
 									<p>Certainly! Learning CSS can be a rewarding experience and is an essential skill for web development. Here&apos;s a step-by-step guide to help you get started:</p>
                                     <ol>
                                         <li>
-                                            <p><strong>HTML Fundamentals</strong>: Before diving into CSS, make sure you have a good understanding of HTML. CSS is used to style and format HTML elements, so having a solid grasp of HTML is fundamental.</p>
+                                            <p><strong><a href="learnhtml.html">HTML Fundamentals</a></strong>: Before diving into CSS, make sure you have a good understanding of HTML. CSS is used to style and format HTML elements, so having a solid grasp of HTML is fundamental.</p>
                                         </li>
                                         <li>
-                                            <p><strong>Online Tutorials and Courses</strong>: Start by exploring online tutorials and courses that cater to beginners in web development. Some popular platforms like Codecademy, freeCodeCamp, and MDN Web Docs offer comprehensive CSS courses with interactive exercises.</p>
+                                            <p><strong>Online Tutorials and Courses</strong>: Start by exploring online tutorials and courses that cater to beginners in web development. Some popular platforms like <a href="https://www.codecademy.com/catalog/language/html-css" target="_blank">Codecademy</a>, <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a> offer comprehensive CSS courses with interactive exercises.</p>
                                         </li>
                                         <li>
-                                            <p><strong>W3Schools</strong>: W3Schools is a great resource for learning web technologies. They have a dedicated section for CSS with explanations, examples, and an online editor to practice.</p>
+                                            <p><strong>W3Schools</strong>: W3Schools is a great resource for learning web technologies. They have a dedicated section for CSS with explanations, examples, and an online editor to practice. Visit their website: <a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS</a></p>
                                         </li>
                                         <li>
-                                            <p><strong>CSS Documentation</strong>: The Mozilla Developer Network (MDN) provides excellent documentation for CSS. Refer to their CSS documentation to understand CSS properties, selectors, and concepts in-depth.</p>
+                                            <p><strong>CSS Documentation</strong>: The Mozilla Developer Network (MDN) provides excellent <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">documentation for CSS</a>. Refer to their CSS documentation to understand CSS properties, selectors, and concepts in-depth.</p>
                                         </li>
                                         <li>
                                             <p><strong>CSS Selectors</strong>: Learn about CSS selectors, as they are used to target specific HTML elements to apply styles. Understand the basic selectors like element selectors, class selectors, and ID selectors.</p>
@@ -220,17 +231,89 @@ font-size: 24px;
 
 									<p>Certainly! Practicing CSS is essential to mastering web design and making your webpages look visually appealing. Here are some CSS exercises to help you improve your skills:</p>
                                     <p>Exercise 1: Styling Text Create an HTML file and apply various styles to the text, such as changing the font, color, size, and alignment. Experiment with different font families and Google Fonts.</p>
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(1)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content1">
+                                        <p>To style text in an HTML file, you can use CSS (Cascading Style Sheets) to apply various styles such as changing the font, color, size, alignment, and even use Google Fonts for different font families. Follow these steps to create an HTML file and apply text styles:</p>
+                                        <p>Step 1: Create an HTML file Create a new text file and save it with the extension <code>.html</code>. You can use any text editor for this, like Notepad, Visual Studio Code, or Sublime Text.</p>
+                                        <p>Step 2: Add the basic HTML structure Inside the HTML file, start with the basic HTML structure:</p>
+                                        
+                                        <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>  &lt;title&gt;Text Styling Example&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;!-- Your content will go here --&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</code></pre>
+                                        
+                                        <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>  &lt;title&gt;Text Styling Example&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;!-- Your content will go here --&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</code></pre>
+                                        <p>Step 3: Add CSS styles In the&nbsp;<code>&lt;head&gt;</code> section of the HTML file, add a&nbsp;<code>&lt;style&gt;</code> tag to include the CSS styles. Here, we&apos;ll define some basic styles for the text:</p>
+                                        <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>  &lt;title&gt;Text Styling Example&lt;/title&gt;<br>  &lt;style&gt;<br>    /* CSS styles go here */<br>    body {<br>      font-family: Arial, sans-serif;<br>      color: #333;<br>    }<br><br>    h1 {<br>      font-size: 36px;<br>      text-align: center;<br>    }<br><br>    p {<br>      font-size: 18px;<br>      text-align: left;<br>    }<br>  &lt;/style&gt;<br> &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;!-- Your content will go here --&gt;<br><br>&lt;/body&gt;&lt;<br>/html&gt;</code></pre>
+                                        <p>Step 4: Add content and apply styles Now, inside the&nbsp;<code>&lt;body&gt;</code> section of the HTML file, you can add your content and apply the defined styles. For example:</p>
+                                        <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>  &lt;title&gt;Text Styling Example&lt;/title&gt;<br>  &lt;style&gt;<br>    /* CSS styles go here */<br>    body {<br>      font-family: Arial, sans-serif;<br>      color: #333;<br>    }<br><br>    h1 {<br>      font-size: 36px;<br>      text-align: center;<br>    }<br><br>    p {<br>      font-size: 18px;<br>      text-align: left;<br>    }<br>  &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>  &lt;h1&gt;Hello, this is a heading&lt;/h1&gt;<br>  &lt;p&gt;This is a paragraph with some text.&lt;/p&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</code></pre>
+                                        <p>Step 5: Using Google Fonts If you want to use Google Fonts, you can include the Google Fonts link in the&nbsp;<code>&lt;head&gt;</code> section of your HTML file. For example, to use the &quot;Roboto&quot; font from Google Fonts:</p>
+                                        <pre><code>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>  &lt;title&gt;Text Styling Example&lt;/title&gt;<br>  &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"&gt;<br>  &lt;style&gt;<br>    /* CSS styles go here */<br>    body {<br>      font-family: "Roboto", Arial, sans-serif;<br>      color: #333;<br>    }<br><br>    /* Rest of your CSS styles... */<br>  &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>  &lt;!-- Your content goes here --&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</code></pre>
+                                        <p>With these steps, you can create an HTML file and experiment with various text styles using CSS, including changing fonts, colors, sizes, and alignments.</p>
+                                        <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/nice-booth-ldws27?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
+                                    <!--
+                                    <ul class="actions">
+                                        
+                                        <li><a href="javascript:void(0)" class="button" onclick="toggleContent(2)">Step</a></li>
+                                        <li><a href="javascript:void(0)" class="button" onclick="toggleContent(3)">Step</a></li>
+                                    </ul>
+                                  
+                                      
+                                  
+                                      <div class="hidden-content" id="content2">
+                                        <p>Step 2: Add the basic HTML structure.</p>
+                                        <button onclick="toggleContent(0)">Hide Step</button>
+                                      </div>
+                                  
+                                      <div class="hidden-content" id="content3">
+                                        <p>Step 3: Add the CSS and JavaScript code.</p>
+                                        <button onclick="toggleContent(0)">Hide Step</button>
+                                      </div>
+                                    -->
                                     <p>Exercise 2: Creating a Navigation Bar Build a navigation bar at the top of the webpage using CSS. Style the links, change their colors, and add hover effects to make them change color when the mouse hovers over them.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/xenodochial-turing-9vnlvq?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 3: Formatting Lists Style both ordered and unordered lists in different ways. Change the bullet points&apos; appearance, add padding or margin, and create a more visually appealing list.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/elastic-microservice-jtrh8l?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 4: Styling Buttons Design some buttons using HTML and CSS. Apply different colors, borders, and hover effects to make them look interactive.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/floral-feather-ywrtcf?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 5: Creating a Responsive Layout Build a simple webpage layout using CSS Flexbox or CSS Grid. Ensure that the layout adjusts nicely when the screen size changes.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/festive-galileo-74l96c?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 6: Designing Cards Create card elements that display information with CSS. Style the cards with different colors, borders, and shadows.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/elegant-lichterman-vhkvl6?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 7: Customizing Forms Take the contact form you created in the HTML exercises and style it with CSS. Customize the input fields, labels, and buttons.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/compassionate-tdd-l8pkfv?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 8: Creating Image Effects Design a photo gallery with images displayed in a grid. Add CSS effects such as transitions or overlays when hovering over the images.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/flamboyant-torvalds-lp9cxg?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 9: Making a Dropdown Menu Build a dropdown menu using CSS. Use a combination of CSS selectors and properties to create this interactive feature.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/floral-microservice-7kmxp2?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
                                     <p>Exercise 10: Animations and Transitions Create a CSS animation for an element on your webpage. Experiment with transitions, keyframes, and other animation properties to add movement to your design.</p>
-                                    <p>Exercise 11: CSS Flexbox Challenges Practice using CSS Flexbox by completing various Flexbox challenges available on websites like Flexbox Froggy.</p>
-                                    <p>Exercise 12: CSS Grid Challenges Similar to Flexbox, explore CSS Grid by completing CSS Grid challenges available online.</p>
+                                    <ul class="actions">
+										<li><a href="https://codesandbox.io/embed/goofy-marco-vv3nmj?fontsize=14&hidenavigation=1&theme=dark" class="button" target="_blank">Show Code</a></li>
+									</ul>
+                                    <p>Exercise 11: CSS Flexbox Challenges Practice using CSS Flexbox by completing various Flexbox challenges available on websites like <a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a>.</p>
+                                    <p>Exercise 12: CSS Grid Challenges Similar to Flexbox, explore CSS Grid by completing CSS Grid challenges available online. One such resource is <a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a>, which is a game that allows you to learn and experiment with CSS Grid through interactive challenges.</p>
                                     <p>Remember to test your CSS code across different browsers to ensure cross-browser compatibility. Regular practice and experimentation are key to becoming proficient in CSS. Have fun and happy coding!</p>
 
 									<hr class="major">
@@ -312,7 +395,7 @@ font-size: 24px;
                                             <p><strong>CSS Diner</strong>: CSS Diner is another interactive game where you learn CSS selectors by completing levels that involve selecting specific HTML elements. Visit: <a href="https://flukeout.github.io/" target="_new">https://flukeout.github.io/</a></p>
                                         </li>
                                         <li>
-                                            <p><strong>YouTube Tutorials</strong>: YouTube has a wealth of CSS tutorials and channels dedicated to web development. Some popular channels include &quot;Traversy Media,&quot; &quot;Kevin Powell,&quot; &quot;Dev Ed,&quot; and &quot;The Net Ninja.&quot;</p>
+                                            <p><strong>YouTube Tutorials</strong>: YouTube has a wealth of CSS tutorials and channels dedicated to web development. Some popular channels include <a href="https://www.youtube.com/c/TraversyMedia" target="_blank">Traversy Media</a>, <a href="https://www.youtube.com/user/KepowOb" target="_blank">Kevin Powell</a>, <a href="https://www.youtube.com/c/DevEd/" target="_blank">Dev Ed</a>, and <a href="https://www.youtube.com/c/TheNetNinja" target="_blank">The Net Ninja</a>.</p>
                                         </li>
                                         <li>
                                             <p><strong>CSS Podcasts</strong>: If you enjoy audio learning, you can find CSS-related podcasts that discuss tips, best practices, and the latest trends in CSS.</p>
@@ -390,11 +473,31 @@ font-size: 24px;
 			</div>
 
 		<!-- Scripts -->
+            <script>
+                // JavaScript function to toggle the visibility of the hidden content
+                function toggleContent(step) {
+                    var allContents = document.querySelectorAll('.hidden-content');
+                    var activeContent = document.getElementById('content' + step);
+              
+                    for (var i = 0; i < allContents.length; i++) {
+                      allContents[i].classList.remove('active-content');
+                    }
+              
+                    if (step !== 0) {
+                      activeContent.classList.add('active-content');
+              
+                      // Find the first visible content block and scroll to it
+                      var firstVisibleContent = document.querySelector('.active-content');
+                      firstVisibleContent.scrollIntoView({ behavior: 'smooth'});
+                    }
+                  }
+            </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            
 
 	</body>
 </html>
