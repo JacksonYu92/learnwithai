@@ -1,0 +1,764 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Learn SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* Your CSS styles go here */
+            .hidden-content {
+              display: none;
+              margin-top: 10px;
+            }
+            .active-content {
+              display: block;
+            }
+          </style>
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Learn with AI</strong> by Jackson</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>SQL</h1>
+									</header>
+									<iframe width="720" height="405" src="https://www.youtube.com/embed/dh8S1TfQwas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+									<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                                    border-radius: 8px; will-change: transform;">
+                                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqU0ytEQQ&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                                    </iframe>
+                                    </div>
+                                    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFqU0ytEQQ&#x2F;watch?utm_content=DAFqU0ytEQQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">learn SQL with AI</a> by Jackson YU
+                                                                        
+                                    <br><br>
+									<h2>What is SQL?</h2>
+									<p>SQL stands for Structured Query Language. It is a programming language designed for managing, querying, and manipulating relational databases. SQL provides a standardized way to interact with databases, and it is commonly used in various applications, web development, and data analysis.</p>
+                                    <p>The primary purpose of SQL is to allow users to define, manage, and retrieve data from relational database management systems (RDBMS). It enables users to perform tasks such as:</p>
+                                    <ol>
+                                        <li>Creating and modifying database schemas (tables, indexes, views, etc.).</li>
+                                        <li>Inserting, updating, and deleting data in the database.</li>
+                                        <li>Querying the database to retrieve specific information based on specified criteria.</li>
+                                        <li>Controlling access to the database and its objects through user permissions and security mechanisms.</li>
+                                    </ol>
+                                    <p>SQL operates on relational databases, which store data in structured tables consisting of rows and columns. Each table represents an entity or concept, and the rows contain individual records, while the columns define the attributes of those records.</p>
+                                    <p>Some common SQL commands include:</p>
+                                    <ul>
+                                        <li>SELECT: Used to retrieve data from one or more tables based on specified conditions.</li>
+                                        <li>INSERT: Used to add new records to a table.</li>
+                                        <li>UPDATE: Used to modify existing records in a table.</li>
+                                        <li>DELETE: Used to remove records from a table.</li>
+                                        <li>CREATE TABLE: Used to define a new table and its columns.</li>
+                                        <li>ALTER TABLE: Used to modify an existing table&apos;s structure.</li>
+                                        <li>JOIN: Used to combine data from multiple tables based on a related column.</li>
+                                        <li>GROUP BY: Used to group data based on specific column values.</li>
+                                        <li>ORDER BY: Used to sort the query results based on one or more columns.</li>
+                                    </ul>
+                                    <p>Different database management systems (DBMS) such as 
+                                        <a href="https://www.mysql.com/" target="_blank">MySQL</a>, 
+                                        <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>, 
+                                        <a href="https://www.oracle.com/database/" target="_blank">Oracle</a>, 
+                                        <a href="https://www.microsoft.com/en-us/sql-server/" target="_blank">Microsoft SQL Server</a>, and 
+                                        <a href="https://www.sqlite.org/" target="_blank">SQLite</a> support SQL. Though there may be some variations in syntax and features between different database systems, the core principles and commands of SQL remain largely consistent across platforms.</p>
+                                    
+                                    <hr class="major" />
+
+                                    <h2>What is MySQL?</h2>
+									<p>MySQL is an open-source relational database management system (RDBMS) that is widely used for building and managing databases. It was developed by Swedish company MySQL AB, which was later acquired by Sun Microsystems and subsequently by Oracle Corporation. MySQL is one of the most popular and widely used databases in the world due to its ease of use, performance, reliability, and robust feature set.</p>
+                                    <p>Key features of MySQL include:</p>
+                                    <ol>
+                                        <li>
+                                            <p>Relational Database: MySQL is based on the relational database model, where data is stored in tables with rows and columns, and relationships between tables are defined using keys.</p>
+                                        </li>
+                                        <li>
+                                            <p>Open Source: MySQL is released under an open-source license, which means it is freely available for use, modification, and distribution. This has contributed to its widespread adoption by developers and organizations of all sizes.</p>
+                                        </li>
+                                        <li>
+                                            <p>Cross-Platform: MySQL is designed to run on various operating systems, including Windows, Linux, macOS, and others, making it highly versatile and accessible.</p>
+                                        </li>
+                                        <li>
+                                            <p>High Performance: MySQL is known for its excellent performance, especially when dealing with simple to moderately complex queries and data structures.</p>
+                                        </li>
+                                        <li>
+                                            <p>Scalability: MySQL can handle small to large-scale databases and is used in a wide range of applications, from small websites to large enterprise systems.</p>
+                                        </li>
+                                        <li>
+                                            <p>Multi-User Support: MySQL supports multiple users and concurrent connections, allowing multiple clients to access the database simultaneously.</p>
+                                        </li>
+                                        <li>
+                                            <p>Security: MySQL provides various security features, including user authentication, access control, and encryption of data transmission over networks.</p>
+                                        </li>
+                                        <li>
+                                            <p>Replication and High Availability: MySQL supports replication, allowing data to be mirrored across multiple servers for data redundancy and high availability.</p>
+                                        </li>
+                                        <li>
+                                            <p>Stored Procedures and Triggers: MySQL supports stored procedures, which are precompiled SQL code stored in the database, and triggers, which are automatic actions triggered by specific events.</p>
+                                        </li>
+                                        <li>
+                                            <p>Compatibility: MySQL is compatible with standard SQL, which means most SQL commands used in other database systems can be adapted to work with MySQL with minimal changes.</p>
+                                        </li>
+                                    </ol>
+                                    <p>MySQL is commonly used in web applications, content management systems (CMS), e-commerce platforms, data analytics, and various other scenarios where data storage and retrieval are essential. Its popularity is also partly due to its integration with the LAMP stack (Linux, Apache, MySQL, PHP/Python/Perl), which has been a popular choice for web development.</p>
+                                    
+                                    <hr class="major" />
+
+                                    <h2>What are the difference between SQL and MySQL?</h2>
+									<p>SQL (Structured Query Language) and MySQL are related but distinct concepts:</p>
+                                    <ol>
+                                        <li>
+                                            <p>SQL:</p>
+                                            <ul>
+                                                <li>SQL is a programming language used for managing, querying, and manipulating relational databases.</li>
+                                                <li>It is a standard language that provides a unified way to interact with various database management systems (DBMS), including MySQL.</li>
+                                                <li>SQL is not a database management system itself; instead, it is a language used to communicate with different DBMS to perform various operations on databases.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>MySQL:</p>
+                                            <ul>
+                                                <li>MySQL is a specific relational database management system (RDBMS) that implements the SQL language. It is a software product that serves as a database server responsible for storing, managing, and retrieving data.</li>
+                                                <li>MySQL is one of the most popular and widely used database systems, especially in web applications, due to its open-source nature, performance, and scalability.</li>
+                                                <li>It supports the SQL language, allowing users to interact with the MySQL database using SQL commands.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <p>In summary, SQL is the language used to communicate with relational databases, while MySQL is one specific implementation of an RDBMS that supports SQL. Other database systems, such as <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>, 
+                                        <a href="https://www.oracle.com/database/" target="_blank">Oracle</a>, 
+                                        <a href="https://www.microsoft.com/en-us/sql-server/" target="_blank">Microsoft SQL Server</a>, and 
+                                        <a href="https://www.sqlite.org/" target="_blank">SQLite</a>, etc., also support SQL, but each may have its own features, syntax, and performance characteristics. Therefore, SQL is a standardized language used across multiple database systems, and MySQL is a particular database system that adheres to the SQL standard.</p>
+                                    
+                                    <hr class="major" />
+
+									<h2>Could you give me step-by-step instructions on how to learn SQL?</h2>
+									<p>Certainly! Learning SQL can be a rewarding journey, and here are step-by-step instructions to get you started:</p>
+                                    <p>Step 1: Understand the Basics of Databases</p>
+                                    <ul>
+                                        <li>Familiarize yourself with the concept of databases and how they store data in tables with rows and columns. Understand the purpose of primary keys, foreign keys, and relationships between tables.</li>
+                                    </ul>
+                                    <p>Step 2: Set Up a Practice Environment</p>
+                                    <ul>
+                                        <li>Install a relational database management system (RDBMS) on your computer. MySQL, PostgreSQL, and SQLite are popular choices. Alternatively, you can use online database platforms that offer a sandbox environment for practice.</li>
+                                    </ul>
+                                    <p>Step 3: Learn SQL Fundamentals</p>
+                                    <ul>
+                                        <li>Start with the basic SQL commands, such as SELECT, INSERT, UPDATE, and DELETE. These commands are essential for querying and manipulating data in the database.</li>
+                                    </ul>
+                                    <p>Step 4: Study SQL Queries</p>
+                                    <ul>
+                                        <li>Learn how to construct SQL queries to retrieve specific data from the database. Understand the use of conditions, filtering, sorting, and grouping in queries.</li>
+                                    </ul>
+                                    <p>Step 5: Practice with Simple Queries</p>
+                                    <ul>
+                                        <li>Practice writing simple SQL queries to retrieve data from a single table. Use the practice environment to experiment with different scenarios.</li>
+                                    </ul>
+                                    <p>Step 6: Master Joins and Relationships</p>
+                                    <ul>
+                                        <li>Understand different types of joins (INNER JOIN, LEFT JOIN, RIGHT JOIN, etc.) to combine data from multiple tables. Learn how to establish relationships between tables using foreign keys.</li>
+                                    </ul>
+                                    <p>Step 7: Explore Advanced SQL Concepts</p>
+                                    <ul>
+                                        <li>Learn about subqueries, aggregate functions (COUNT, SUM, AVG, etc.), and the HAVING clause for more complex data manipulation.</li>
+                                    </ul>
+                                    <p>Step 8: Create and Modify Database Objects</p>
+                                    <ul>
+                                        <li>Study how to create and manage database objects, such as tables, views, indexes, and stored procedures.</li>
+                                    </ul>
+                                    <p>Step 9: Work with Transactions</p>
+                                    <ul>
+                                        <li>Understand the concept of database transactions, their importance, and how to manage them.</li>
+                                    </ul>
+                                    <p>Step 10: Practice, Practice, Practice</p>
+                                    <ul>
+                                        <li>Practice is essential for mastering SQL. Work on real-world scenarios and challenges to apply your knowledge effectively.</li>
+                                    </ul>
+                                    <p>Step 11: Refer to Documentation and Tutorials</p>
+                                    <ul>
+                                        <li>Utilize online SQL documentation, tutorials, and resources to deepen your understanding and explore more advanced topics.</li>
+                                    </ul>
+                                    <p>Step 12: Work on Real Projects</p>
+                                    <ul>
+                                        <li>Once you have a solid understanding of SQL, consider working on real projects that involve database management. It could be building a web application, data analysis, or database optimization.</li>
+                                    </ul>
+                                    <p>Step 13: Stay Updated</p>
+                                    <ul>
+                                        <li>SQL evolves, and new features may be introduced. Stay updated with the latest SQL versions and best practices.</li>
+                                    </ul>
+                                    <p>Remember, learning SQL is a gradual process, and it&apos;s essential to be patient and persistent. As you gain more experience, you&apos;ll become more proficient in using SQL to manage and analyze data efficiently. Happy learning!</p>
+                                    
+                                    <hr class="major" />
+
+                                    <h2>Could you explain the basics of SQL for beginners?</h2>
+
+									<p>Certainly! Let&apos;s go over the basics of SQL for beginners:</p>
+                                    <ol>
+                                        <li>
+                                            <p>What is SQL? SQL (Structured Query Language) is a programming language used to manage, query, and manipulate data in relational databases. It allows you to interact with databases, perform operations like creating, updating, and deleting data, and retrieve information from the database.</p>
+                                        </li>
+                                        <li>
+                                            <p>Database Concepts: A database is an organized collection of data, structured in tables with rows and columns. Each table represents an entity (e.g., customers, products) and contains individual records (rows) with specific attributes (columns).</p>
+                                        </li>
+                                        <li>
+                                            <p>SQL Commands: Here are some fundamental SQL commands:</p>
+                                            <ul>
+                                                <li>SELECT: Used to retrieve data from the database. It is the most commonly used command in SQL.</li>
+                                                <li>INSERT: Used to add new data into a table.</li>
+                                                <li>UPDATE: Used to modify existing data in a table.</li>
+                                                <li>DELETE: Used to remove data from a table.</li>
+                                                <li>CREATE TABLE: Used to create a new table with specified columns.</li>
+                                                <li>ALTER TABLE: Used to modify the structure of an existing table.</li>
+                                                <li>DROP TABLE: Used to delete a table and its data.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>Basic SELECT Query: The SELECT statement is used to retrieve data from a table. The basic syntax is as follows:</p>
+                                        </li>
+                                    </ol>
+                                    <pre><div><div><code>SELECT column1, column2, ... FROM table_name;</code></div></div></pre>
+                                    <p>For example, to retrieve all data from a table called &quot;employees&quot;:</p>
+                                    <pre><div><div><code>SELECT * FROM employees;</code></div></div></pre>
+                                    <p>The asterisk (*) is a wildcard that selects all columns from the table.</p>
+                                    <ol start="5">
+                                        <li>Filtering Data: You can use the WHERE clause to filter data based on specific conditions. For example, to retrieve employees with a specific job title:</li>
+                                    </ol>
+                                    <pre><div><div><code>SELECT * FROM employees WHERE job_title = &apos;Manager&apos;;</code></div></div></pre>
+                                    <ol start="6">
+                                        <li>Sorting Data: The ORDER BY clause is used to sort the results in ascending or descending order. For example:</li>
+                                    </ol>
+                                    <pre><div><div><code>SELECT * FROM employees ORDER BY salary DESC;</code></div></div></pre>
+                                    <p>This will display employees in descending order of their salary.</p>
+                                    <ol start="7">
+                                        <li>Aggregating Data: SQL provides aggregate functions to perform calculations on data, such as SUM, AVG, COUNT, MIN, MAX. For example:</li>
+                                    </ol>
+                                    <pre><div><div><code>SELECT COUNT(*) FROM employees;</code></div></div></pre>
+                                    <p>This will count the total number of records in the &quot;employees&quot; table.</p>
+                                    <ol start="8">
+                                        <li>Joining Tables: You can combine data from multiple tables using JOIN operations based on related columns. Common joins include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.</li>
+                                    </ol>
+                                    <pre><div><div><code>SELECT orders.order_id, customers.customer_name
+FROM orders
+INNER JOIN customers ON orders.customer_id = customers.customer_id; </code></div></div></pre>
+                                    <p>This retrieves the order ID and customer name from the &quot;orders&quot; and &quot;customers&quot; tables, respectively, where there&apos;s a match between their &quot;customer_id&quot; columns.</p>
+                                    <p>These are the foundational concepts of SQL. As you progress, you&apos;ll explore more advanced topics like subqueries, views, stored procedures, and transactions. Practice is key to becoming proficient in SQL, so experiment with different queries and scenarios in your chosen SQL environment.</p>
+                                    
+                                    <hr class="major">
+
+                                    <h2>Could you explain more advanced topics of SQL?</h2>
+
+									<p>Certainly! Once you have a solid understanding of the basics of SQL, you can explore more advanced topics to enhance your database management and querying skills. Here are some advanced SQL topics:</p>
+                                    <ol>
+                                        <li>Subqueries: A subquery (also known as a nested query) is a query embedded within another query. It allows you to use the results of one query as input for another query. Subqueries can be used in the SELECT, FROM, WHERE, and HAVING clauses. They are often used to filter data or retrieve information based on complex conditions.</li>
+                                    </ol>
+                                    <p>Example of a subquery in the WHERE clause:</p>
+                                    <pre><div><div><code>SELECT product_name, unit_price
+FROM products
+WHERE unit_price &gt; (SELECT AVG(unit_price) FROM products);</code></div></div></pre>
+                                    <p>This query retrieves products with a unit price higher than the average unit price of all products.</p>
+                                    <ol start="2">
+                                        <li>Views: A view is a virtual table created from the result of a SELECT query. Views provide a way to simplify complex queries or restrict access to sensitive data by presenting a subset of the data to users. Views don&apos;t store data themselves; they are just saved queries that can be referenced like regular tables.</li>
+                                    </ol>
+                                    <p>Example of creating a view:</p>
+                                    <pre><div><div><code>CREATE VIEW high_salary_employees AS
+SELECT employee_id, first_name, last_name, salary
+FROM employees
+WHERE salary &gt; 50000; </code></div></div></pre>
+                                    <ol start="3">
+                                        <li>Stored Procedures: A stored procedure is a set of SQL statements that are stored in the database and can be executed as a single unit. Stored procedures allow you to encapsulate complex logic and business rules in the database, making it easier to maintain and manage application code.</li>
+                                    </ol>
+                                    <p>Example of creating a stored procedure:</p>
+                                    <pre><div><div><code>CREATE PROCEDURE get_employee_details (IN emp_id INT)
+BEGIN
+    SELECT * FROM employees WHERE employee_id = emp_id;
+END;</code></div></div></pre>
+                                    <ol start="4">
+                                        <li>Indexes: Indexes are database objects used to improve the performance of queries by speeding up data retrieval. They are created on specific columns of a table, allowing the database engine to locate data more quickly. Properly indexed tables can significantly enhance query performance, especially for large datasets.</li>
+                                    </ol>
+                                    <p>Example of creating an index:</p>
+                                    <pre><div><div><code>CREATE INDEX idx_employee_last_name ON employees (last_name);</code></div></div></pre>
+                                    <ol start="5">
+                                        <li>Transactions: A transaction is a sequence of one or more SQL statements that are executed as a single unit. Transactions ensure that all changes are either committed (made permanent) or rolled back (undone) in case of errors or failures. This helps maintain data consistency and integrity in the database.</li>
+                                    </ol>
+                                    <p>Example of using transactions:</p>
+                                    <pre><div><div><code>BEGIN;
+UPDATE account SET balance = balance - 100 WHERE account_id = 123;
+UPDATE account SET balance = balance + 100 WHERE account_id = 456;
+COMMIT;</code></div></div></pre>
+                                    <ol start="6">
+                                        <li>Common Table Expressions (CTEs): CTEs provide a way to define temporary result sets that can be referenced within a query. They are particularly useful for simplifying complex queries and breaking them down into more manageable parts.</li>
+                                    </ol>
+                                    <p>Example of using CTE:</p>
+                                    <pre><div><div><code>WITH top_employees AS (
+    SELECT employee_id, first_name, last_name, salary,
+        RANK() OVER (ORDER BY salary DESC) AS rank
+    FROM employees
+)
+SELECT employee_id, first_name, last_name, salary
+FROM top_employees
+WHERE rank &lt;= 10;</code></div></div></pre>
+                                    <p>This query retrieves the top 10 employees with the highest salaries using a common table expression.</p>
+                                    <p>These advanced SQL topics allow you to perform more sophisticated data manipulation and optimize your queries for better performance. As you continue to explore SQL, you&apos;ll find many more features and techniques that will enable you to handle complex database scenarios efficiently.</p>
+                                    
+									<hr class="major">
+
+									<h2>How do you explain SQL to 10 years old kid?</h2>
+
+									<p>Sure! Explaining SQL to a 10-year-old in simple terms:</p>
+                                    <p>&quot;Imagine you have a big box where you can store lots of toys. Each toy has a name and some special information, like its color, size, and how much it costs. SQL is like a special language that helps you organize and find your toys easily.</p>
+                                    <p>With SQL, you can ask questions about your toys, like &apos;Show me all the red toys&apos; or &apos;Tell me the names of the toys that cost less than $10.&apos; SQL understands your questions and looks inside the box to find the answers.</p>
+                                    <p>You can also use SQL to add new toys to the box, change the color of a toy, or even remove toys you don&apos;t want anymore. It&apos;s like having a magic helper who takes care of your toy box and helps you find what you need quickly.&quot;</p>
+                                    <p>In this simple explanation, we use a toy box as an analogy for a database, toys as data, and SQL as the magic language to interact with the toy box. This way, a 10-year-old can understand the basic concept of SQL and how it helps manage and retrieve information from a database.</p>
+                                    
+									<hr class="major">
+
+									<h2>Can you provide me with some exercises to practive SQL?</h2>
+
+									<p>Absolutely! Here are some SQL exercises to practice your skills. You can use any SQL database system of your choice (e.g., MySQL, PostgreSQL, SQLite) to work on these exercises:</p>
+                                    <ol>
+                                        <li>Retrieve Data: Write SQL queries to retrieve information from the following table &quot;employees&quot;:</li>
+                                    </ol>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>employee_id</th>
+                                                <th>first_name</th>
+                                                <th>last_name</th>
+                                                <th>job_title</th>
+                                                <th>salary</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>John</td>
+                                                <td>Smith</td>
+                                                <td>Manager</td>
+                                                <td>60000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Jane</td>
+                                                <td>Doe</td>
+                                                <td>Developer</td>
+                                                <td>50000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Mike</td>
+                                                <td>Johnson</td>
+                                                <td>Analyst</td>
+                                                <td>45000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Lisa</td>
+                                                <td>Brown</td>
+                                                <td>Designer</td>
+                                                <td>55000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul>
+                                        <li>Retrieve all columns for all employees.</li>
+                                        <li>Retrieve the first name and job title for all employees.</li>
+                                        <li>Retrieve the employee with the highest salary.</li>
+                                        <li>Retrieve the employees with salaries greater than 50000.</li>
+                                    </ul>
+                                    <ol start="2">
+                                        <li>Filtering and Sorting: Use the &quot;products&quot; table:</li>
+                                    </ol>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>product_id</th>
+                                                <th>product_name</th>
+                                                <th>category</th>
+                                                <th>unit_price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Laptop</td>
+                                                <td>Electronics</td>
+                                                <td>800</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>T-shirt</td>
+                                                <td>Clothing</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Smartphone</td>
+                                                <td>Electronics</td>
+                                                <td>600</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Jeans</td>
+                                                <td>Clothing</td>
+                                                <td>40</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul>
+                                        <li>Retrieve all products with a unit price greater than 50, sorted by unit_price in descending order.</li>
+                                        <li>Retrieve all products in the &quot;Electronics&quot; category.</li>
+                                        <li>Retrieve the product with the lowest unit price.</li>
+                                    </ul>
+                                    <ol start="3">
+                                        <li>Joins: Use the following tables &quot;employees&quot; and &quot;departments&quot;:</li>
+                                    </ol>
+                                    <p>&quot;employees&quot; table:</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>employee_id</th>
+                                                <th>first_name</th>
+                                                <th>last_name</th>
+                                                <th>department_id</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>John</td>
+                                                <td>Smith</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Jane</td>
+                                                <td>Doe</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Mike</td>
+                                                <td>Johnson</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Lisa</td>
+                                                <td>Brown</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>&quot;departments&quot; table:</p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>department_id</th>
+                                                <th>department_name</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Sales</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Marketing</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>HR</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul>
+                                        <li>Retrieve the first name and department name of all employees.</li>
+                                        <li>Retrieve the first name of employees who work in the &quot;Sales&quot; department.</li>
+                                        <li>Retrieve the first name and department name of all employees, including those without a department.</li>
+                                    </ul>
+                                    <ol start="4">
+                                        <li>Aggregation: Use the &quot;orders&quot; table:</li>
+                                    </ol>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>order_id</th>
+                                                <th>customer_id</th>
+                                                <th>total_amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>101</td>
+                                                <td>150</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>102</td>
+                                                <td>200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>101</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>103</td>
+                                                <td>300</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul>
+                                        <li>Calculate the total amount of all orders.</li>
+                                        <li>Calculate the average total amount of orders.</li>
+                                        <li>Calculate the total amount of orders for each customer.</li>
+                                    </ul>
+                                    <p>Remember to practice writing the SQL queries and execute them to see the results. By working on these exercises, you&apos;ll gain confidence in using SQL and improve your database querying skills. Happy practicing!</p>
+                                    
+
+									<hr class="major">
+
+									<h2>Can you create a quiz on SQL with 10 questions?</h2>
+
+									<p>Certainly! Here&apos;s a quiz with 10 SQL-related questions. Choose the correct option for each question:</p>
+                                    <ol>
+                                        <li>
+                                            <p>What does SQL stand for?&nbsp;<br>a) Structured Question Language&nbsp;<br>b) Structured Query Language&nbsp;<br>c) Sequential Query Language&nbsp;<br>d) Simple Query Language</p>
+                                        </li>
+                                        <li>
+                                            <p>Which SQL command is used to retrieve data from a database?&nbsp;<br>a) INSERT&nbsp;<br>b) DELETE&nbsp;<br>c) SELECT&nbsp;<br>d) UPDATE</p>
+                                        </li>
+                                        <li>
+                                            <p>What is the purpose of the WHERE clause in an SQL query?&nbsp;<br>a) To specify the columns to retrieve&nbsp;<br>b) To filter the data based on specific conditions&nbsp;<br>c) To sort the data in ascending order&nbsp;<br>d) To join multiple tables</p>
+                                        </li>
+                                        <li>
+                                            <p>Which SQL command is used to create a new table?&nbsp;<br>a) ALTER TABLE&nbsp;<br>b) CREATE TABLE&nbsp;<br>c) DROP TABLE&nbsp;<br>d) INSERT INTO</p>
+                                        </li>
+                                        <li>
+                                            <p>Which SQL function is used to count the number of rows in a table?&nbsp;<br>a) COUNT&nbsp;<br>b) SUM&nbsp;<br>c) AVG&nbsp;<br>d) MAX</p>
+                                        </li>
+                                        <li>
+                                            <p>What type of join returns only the rows that have matching values in both tables?&nbsp;<br>a) LEFT JOIN&nbsp;<br>b) RIGHT JOIN&nbsp;<br>c) INNER JOIN&nbsp;<br>d) FULL JOIN</p>
+                                        </li>
+                                        <li>
+                                            <p>Which SQL command is used to delete data from a table?&nbsp;<br>a) DELETE&nbsp;<br>b) TRUNCATE&nbsp;<br>c) DROP&nbsp;<br>d) REMOVE</p>
+                                        </li>
+                                        <li>
+                                            <p>What is the purpose of an index in a database?&nbsp;<br>a) To store data in a table&nbsp;<br>b) To optimize query performance&nbsp;<br>c) To create relationships between tables&nbsp;<br>d) To group data into categories</p>
+                                        </li>
+                                        <li>
+                                            <p>Which SQL statement is used to update existing records in a table?&nbsp;<br>a) ALTER&nbsp;<br>b) UPDATE&nbsp;<br>c) INSERT&nbsp;<br>d) MODIFY</p>
+                                        </li>
+                                        <li>
+                                            <p>What is the result of the following SQL query:</p>
+                                        </li>
+                                    </ol>
+                                    <pre><div><div><code>SELECT product_name, unit_price
+                                FROM products
+                                WHERE unit_price &gt; 50;
+                                </code></div></div></pre>
+                                    <p>a) Retrieves the names of all products with a unit price greater than 50.&nbsp;<br>b) Retrieves the unit price of all products with a name containing &quot;50&quot;.&nbsp;<br>c) Retrieves the names of all products with a unit price less than 50.&nbsp;<br>d) Retrieves the unit price of all products with a name greater than 50.</p>
+                                    <p>Answers:</p>
+                                    <ol>
+                                        <li>b) Structured Query Language</li>
+                                        <li>c) SELECT</li>
+                                        <li>b) To filter the data based on specific conditions</li>
+                                        <li>b) CREATE TABLE</li>
+                                        <li>a) COUNT</li>
+                                        <li>c) INNER JOIN</li>
+                                        <li>a) DELETE</li>
+                                        <li>b) To optimize query performance</li>
+                                        <li>b) UPDATE</li>
+                                        <li>a) Retrieves the names of all products with a unit price greater than 50.</li>
+                                    </ol>
+                                    
+                                    <hr class="major">
+
+                                    <h2>Can you provide additional resources for me to learn SQL?</h2>
+									<p>Absolutely! Here are some additional resources to help you learn SQL:</p>
+                                    <ol>
+                                        <li>
+                                            <p>Online SQL Tutorials:</p>
+                                            <ul>
+                                                <li>W3Schools SQL Tutorial: <a href="https://www.w3schools.com/sql/" target="_new">https://www.w3schools.com/sql/</a></li>
+                                                <li>SQLZoo: <a href="https://sqlzoo.net/" target="_new">https://sqlzoo.net/</a></li>
+                                                <li>Mode SQL Tutorial: <a href="https://mode.com/sql-tutorial/" target="_new">https://mode.com/sql-tutorial/</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>Interactive SQL Learning Platforms:</p>
+                                            <ul>
+                                                <li>Codecademy SQL Course: <a href="https://www.codecademy.com/learn/learn-sql" target="_new">https://www.codecademy.com/learn/learn-sql</a></li>
+                                                <li>SQLBolt: <a href="https://sqlbolt.com/" target="_new">https://sqlbolt.com/</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>YouTube Channels:</p>
+                                            <ul>
+                                                <li>Programming with Mosh: SQL Tutorial for Beginners - <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_new">https://www.youtube.com/watch?v=HXV3zeQKqGY</a></li>
+                                                <li>Derek Banas: SQL Tutorial - <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_new">https://www.youtube.com/watch?v=HXV3zeQKqGY</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>Books:</p>
+                                            <ul>
+                                                <li>&quot;SQL in 10 Minutes a Day&quot; by Ben Forta</li>
+                                                <li>&quot;Head First SQL: Your Brain on SQL -- A Learner&apos;s Guide&quot; by Lynn Beighley</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>Practice Websites:</p>
+                                            <ul>
+                                                <li>LeetCode SQL Problems: <a href="https://leetcode.com/problemset/database/" target="_new">https://leetcode.com/problemset/database/</a></li>
+                                                <li>HackerRank SQL Domain: <a href="https://www.hackerrank.com/domains/sql" target="_new">https://www.hackerrank.com/domains/sql</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>SQL Documentation and Guides:</p>
+                                            <ul>
+                                                <li>Official MySQL Documentation: <a href="https://dev.mysql.com/doc/" target="_new">https://dev.mysql.com/doc/</a></li>
+                                                <li>Official PostgreSQL Documentation: <a href="https://www.postgresql.org/docs/" target="_new">https://www.postgresql.org/docs/</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>SQL Cheat Sheets:</p>
+                                            <ul>
+                                                <li>SQL Cheat Sheet by SQL Tutorial: <a href="https://www.sqltutorial.org/sql-cheat-sheet/" target="_new">https://www.sqltutorial.org/sql-cheat-sheet/</a></li>
+                                                <li>SQL Cheat Sheet (W3Schools): <a href="https://www.w3schools.com/sql/sql_quickref.asp" target="_new">https://www.w3schools.com/sql/sql_quickref.asp</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>Community Forums:</p>
+                                            <ul>
+                                                <li>Stack Overflow SQL Tag: <a href="https://stackoverflow.com/questions/tagged/sql" target="_new">https://stackoverflow.com/questions/tagged/sql</a></li>
+                                                <li>Reddit r/SQL: <a href="https://www.reddit.com/r/SQL/" target="_new">https://www.reddit.com/r/SQL/</a></li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <p>Remember, practice is essential when learning SQL. Work on real-world projects, solve problems, and participate in challenges to reinforce your understanding. The more you use SQL in practical scenarios, the more confident and proficient you&apos;ll become. Good luck on your SQL learning journey!</p>
+
+                                    <hr class="major">
+									<p>Generated content powered by ChatGPT, an AI language model developed by OpenAI. Source: <a href="https://openai.com/">OpenAI</a></p>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="learnhtml.html">HTML</a></li>
+									<li><a href="learncss.html">CSS</a></li>
+									<li><a href="learnjavascript.html">JavaScript</a></li>
+									<li><a href="learnpython.html">Python</a></li>
+									<li><a href="learnsql.html">SQL</a></li>
+									<li><a href="comingsoon.html">JAVA</a></li>
+									<li><a href="aboutme.html">About</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</nav>
+
+					
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>We would love to hear from you! Whether you have a question, feedback, or simply want to connect, our team is here to support you. Feel free to reach out to us through the contact form below or connect with us on our social media channels. We value your input and are committed to continuously improving your learning experience. Join our vibrant community of learners and let's embark on this exciting coding journey together. Get in touch with us today and unlock the power of AI-enhanced education.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="contact.html">learnwithaiinfo@gmail.com</a></li>
+								
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">
+										&copy; 2023 Learn with AI. All rights reserved. 
+										Generated content powered by ChatGPT, an AI language model developed by OpenAI. 
+										Source: <a href="https://openai.com/">OpenAI</a>. 
+										Demo Images: <a href="https://unsplash.com">Unsplash</a>. 
+										Design: <a href="https://html5up.net">HTML5 UP</a>.
+									  </p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+            <script>
+                // JavaScript function to toggle the visibility of the hidden content
+                function toggleContent(step) {
+                    var allContents = document.querySelectorAll('.hidden-content');
+                    var activeContent = document.getElementById('content' + step);
+              
+                    for (var i = 0; i < allContents.length; i++) {
+                      allContents[i].classList.remove('active-content');
+                    }
+              
+                    if (step !== 0) {
+                      activeContent.classList.add('active-content');
+              
+                      // Find the first visible content block and scroll to it
+                      var firstVisibleContent = document.querySelector('.active-content');
+                      firstVisibleContent.scrollIntoView({ behavior: 'smooth'});
+                    }
+                  }
+            </script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6204050276448474"
+     crossorigin="anonymous"></script>
+            
+
+	</body>
+</html>
