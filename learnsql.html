@@ -389,6 +389,43 @@ WHERE rank &lt;= 10;</code></div></div></pre>
                                         <li>Retrieve the employee with the highest salary.</li>
                                         <li>Retrieve the employees with salaries greater than 50000.</li>
                                     </ul>
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(1)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content1">
+                                        <p>Before retrieving data from the table, we need to create the &quot;employees&quot; table. Here&apos;s the SQL query to create the table with the provided schema:</p>
+                                            <pre><div><div><code>CREATE TABLE employees (
+    employee_id INT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    job_title VARCHAR(50),
+    salary DECIMAL(10, 2)
+);</code></div></div></pre>
+                                            <p>This query creates a table named &quot;employees&quot; with columns &quot;employee_id,&quot; &quot;first_name,&quot; &quot;last_name,&quot; &quot;job_title,&quot; and &quot;salary&quot; along with their respective data types. Now that the table is created, you can execute the previous queries to retrieve the desired information from the &quot;employees&quot; table.</p>
+                                            <p>Here are the SQL queries to retrieve the requested information from the &quot;employees&quot; table:</p>
+                                            <ol>
+                                                <li>Retrieve all columns for all employees:</li>
+                                            </ol>
+                                            <pre><div><div><code>SELECT * FROM employees;</code></div></div></pre>
+                                            <ol start="2">
+                                                <li>Retrieve the first name and job title for all employees:</li>
+                                            </ol>
+                                            <pre><div><div><code>SELECT first_name, job_title FROM employees;</code></div></div></pre>
+                                            <ol start="3">
+                                                <li>Retrieve the employee with the highest salary:</li>
+                                            </ol>
+                                            <pre><div><div><code>SELECT * FROM employees ORDER BY salary DESC LIMIT 1;</code></div></div></pre>
+                                            <ol start="4">
+                                                <li>Retrieve the employees with salaries greater than 50000:</li>
+                                            </ol>
+                                            <pre><div><div><code>SELECT * FROM employees WHERE salary &gt; 50000;</code></div></div></pre>
+                                            <p>These queries will provide you with the specified data from the &quot;employees&quot; table based on the given conditions.</p>
+                                        <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+
+                                    
                                     <ol start="2">
                                         <li>Filtering and Sorting: Use the &quot;products&quot; table:</li>
                                     </ol>
@@ -433,6 +470,36 @@ WHERE rank &lt;= 10;</code></div></div></pre>
                                         <li>Retrieve all products in the &quot;Electronics&quot; category.</li>
                                         <li>Retrieve the product with the lowest unit price.</li>
                                     </ul>
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(2)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content2">
+                                        <p>Before retrieving data from the &quot;products&quot; table, let&apos;s create it first. Here&apos;s the SQL query to create the &quot;products&quot; table with the provided schema:</p>
+                                        <pre><div><div><code>CREATE TABLE products (
+    product_id INT,
+    product_name VARCHAR(100),
+    category VARCHAR(50),
+    unit_price DECIMAL(10, 2)
+);</code></div></div></pre>
+                                        <p>This query creates a table named &quot;products&quot; with columns &quot;product_id,&quot; &quot;product_name,&quot; &quot;category,&quot; and &quot;unit_price&quot; along with their respective data types. Now that the table is created, you can execute the previous queries to retrieve the desired information from the &quot;products&quot; table.</p>
+                                        <p>Here are the SQL queries to retrieve the requested information from the &quot;products&quot; table:</p>
+                                        <ol>
+                                            <li>Retrieve all products with a unit price greater than 50, sorted by unit_price in descending order:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT * FROM products WHERE unit_price &gt; 50 ORDER BY unit_price DESC;</code></div></div></pre>
+                                        <ol start="2">
+                                            <li>Retrieve all products in the &quot;Electronics&quot; category:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT * FROM products WHERE category = &apos;Electronics&apos;;</code></div></div></pre>
+                                        <ol start="3">
+                                            <li>Retrieve the product with the lowest unit price:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT * FROM products ORDER BY unit_price ASC LIMIT 1;</code></div></div></pre>
+                                        <p>These queries will give you the specified data from the &quot;products&quot; table based on the given conditions.</p>
+                                        <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
                                     <ol start="3">
                                         <li>Joins: Use the following tables &quot;employees&quot; and &quot;departments&quot;:</li>
                                     </ol>
@@ -501,6 +568,72 @@ WHERE rank &lt;= 10;</code></div></div></pre>
                                         <li>Retrieve the first name of employees who work in the &quot;Sales&quot; department.</li>
                                         <li>Retrieve the first name and department name of all employees, including those without a department.</li>
                                     </ul>
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(3)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content3">
+                                        <p>Let&apos;s create the &quot;employees&quot; and &quot;departments&quot; tables before executing the join queries:</p>
+                                        <ol>
+                                            <li>Create the &quot;employees&quot; table:</li>
+                                        </ol>
+                                        <pre><div><div><code>CREATE TABLE employees (
+    employee_id INT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department_id INT
+);</code></div></div></pre>
+                                        <ol start="2">
+                                            <li>Insert data into the &quot;employees&quot; table:</li>
+                                        </ol>
+                                        <pre><div><div><code>INSERT INTO employees (employee_id, first_name, last_name, department_id)
+VALUES
+    (1, &apos;John&apos;, &apos;Smith&apos;, 1),
+    (2, &apos;Jane&apos;, &apos;Doe&apos;, 2),
+    (3, &apos;Mike&apos;, &apos;Johnson&apos;, 1),
+    (4, &apos;Lisa&apos;, &apos;Brown&apos;, 3);</code></div></div></pre>
+                                        <ol start="3">
+                                            <li>Create the &quot;departments&quot; table:</li>
+                                        </ol>
+                                        <pre><div><div><code>CREATE TABLE departments (
+    department_id INT,
+    department_name VARCHAR(50)
+);</code></div></div></pre>
+                                        <ol start="4">
+                                            <li>Insert data into the &quot;departments&quot; table:</li>
+                                        </ol>
+                                        <pre><div><div><code>INSERT INTO departments (department_id, department_name)
+VALUES
+    (1, &apos;Sales&apos;),
+    (2, &apos;Marketing&apos;),
+    (3, &apos;HR&apos;);</code></div></div></pre>
+                                        <p>Now that the tables are created and populated, we can proceed with the join queries:</p>
+                                        <ol>
+                                            <li>Retrieve the first name and department name of all employees:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT employees.first_name, departments.department_name
+                                        FROM employees
+                                        INNER JOIN departments ON employees.department_id = departments.department_id;
+                                        </code></div></div></pre>
+                                        <ol start="2">
+                                            <li>Retrieve the first name of employees who work in the &quot;Sales&quot; department:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT employees.first_name
+                                        FROM employees
+                                        INNER JOIN departments ON employees.department_id = departments.department_id
+                                        WHERE departments.department_name = &apos;Sales&apos;;
+                                        </code></div></div></pre>
+                                        <ol start="3">
+                                            <li>Retrieve the first name and department name of all employees, including those without a department:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT employees.first_name, departments.department_name
+                                        FROM employees
+                                        LEFT JOIN departments ON employees.department_id = departments.department_id;
+                                        </code></div></div></pre>
+                                        <p>These queries will give you the desired information based on the join conditions between the &quot;employees&quot; and &quot;departments&quot; tables.</p>
+                                        <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
                                     <ol start="4">
                                         <li>Aggregation: Use the &quot;orders&quot; table:</li>
                                     </ol>
@@ -540,6 +673,48 @@ WHERE rank &lt;= 10;</code></div></div></pre>
                                         <li>Calculate the average total amount of orders.</li>
                                         <li>Calculate the total amount of orders for each customer.</li>
                                     </ul>
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(4)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content4">
+                                        <p>Let&apos;s create the &quot;orders&quot; table before executing the aggregation queries:</p>
+                                        <ol>
+                                            <li>Create the &quot;orders&quot; table:</li>
+                                        </ol>
+                                        <pre><div><div><code>CREATE TABLE orders (
+    order_id INT,
+    customer_id INT,
+    total_amount DECIMAL(10, 2)
+);</code></div></div></pre>
+                                        <ol start="2">
+                                            <li>Insert data into the &quot;orders&quot; table:</li>
+                                        </ol>
+                                        <pre><div><div><code>INSERT INTO orders (order_id, customer_id, total_amount)
+VALUES
+    (1, 101, 150),
+    (2, 102, 200),
+    (3, 101, 100),
+    (4, 103, 300);</code></div></div></pre>
+                                        <p>Now that the &quot;orders&quot; table is created and populated, we can proceed with the aggregation queries:</p>
+                                        <ol>
+                                            <li>Calculate the total amount of all orders:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT SUM(total_amount) AS total_orders_amount FROM orders;</code></div></div></pre>
+                                        <ol start="2">
+                                            <li>Calculate the average total amount of orders:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT AVG(total_amount) AS average_order_amount FROM orders;</code></div></div></pre>
+                                        <ol start="3">
+                                            <li>Calculate the total amount of orders for each customer:</li>
+                                        </ol>
+                                        <pre><div><div><code>SELECT customer_id, SUM(total_amount) AS total_order_amount
+FROM orders
+GROUP BY customer_id;</code></div></div></pre>
+                                        <p>These queries will calculate the desired aggregations based on the data in the &quot;orders&quot; table.</p>
+                                        <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
                                     <p>Remember to practice writing the SQL queries and execute them to see the results. By working on these exercises, you&apos;ll gain confidence in using SQL and improve your database querying skills. Happy practicing!</p>
                                     
 
