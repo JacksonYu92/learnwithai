@@ -35,10 +35,10 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Learn with AI</strong> by Jackson</a>
 									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+										<li><a href="https://twitter.com/learnwithainow"  target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/profile.php?id=61550357365402"  target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/learnwithainow/"  target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.youtube.com/@learnwithai-gpt"  target="_blank" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
 									</ul>
 								</header>
 
@@ -277,9 +277,468 @@ public class InputOutputExample {
 
 									<p>Of course! Here are some Java programming exercises to help you practice your skills:</p>
                                     <p><strong>1. Hello, World! </strong>Write a program that prints &quot;Hello, World!&quot; to the console.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(1)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content1">
+                                        <ol>
+                                            <li>
+                                                <p><strong>File Structure:</strong></p>
+                                                <ul>
+                                                    <li>Create a folder to hold your Java code. Let&apos;s call it <code>JavaPrograms</code>.</li>
+                                                    <li>Inside the <code>JavaPrograms</code> folder, create a file named <code>HelloWorld.java</code>.</li>
+                                                    <li>Place your Java code inside the <code>HelloWorld.java</code> file.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p><strong>Java Code:</strong></p>
+                                            </li>
+                                        </ol>
+                                        <p>Here&apos;s the content of the&nbsp;<code>HelloWorld.java</code> file:</p>
+                                        <pre><div><div><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello, World!&quot;);
+    }
+}</code></div></div></pre>
+                                        <ol start="3">
+                                            <li><strong>Compiling:</strong></li>
+                                        </ol>
+                                        <p>Open your terminal and navigate to the <code>JavaPrograms</code> folder where you&apos;ve saved the&nbsp;<code>HelloWorld.java</code> file. Then run the following command to compile the code:</p>
+                                        <pre><div><div><code>javac HelloWorld.java</code></div></div></pre>
+                                        <p>This should create a compiled <code>.class</code> file in the same folder.</p>
+                                        <ol start="4">
+                                            <li><strong>Running:</strong></li>
+                                        </ol>
+                                        <p>After compiling, you can run the program using:</p>
+                                        <pre><div><div><code>java HelloWorld</code></div></div></pre>
+                                        <p>Make sure that you&apos;re navigating to the correct folder containing the <code>HelloWorld.java</code> file and using the correct compilation and execution commands.</p>
+                                        <p>Remember to keep the class name and the file name exactly the same (including capitalization) to avoid any issues. If you&apos;re still encountering problems, double-check your file structure and the commands you&apos;re using.</p>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/Hello-World" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+
                                     <p><strong>2. Even or Odd: </strong>Write a program that takes an integer input and determines if it&apos;s even or odd.</p>
+                                    
+                                  <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(2)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content2">
+                                        <ol>
+                                            <li>
+                                                <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                                <ol>
+                                                    <li>
+                                                        <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>EvenOddChecker.java</code>.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                        <pre><div><div><code>import java.util.Scanner;
+                                
+public class EvenOddChecker {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></div></div></pre>
+                                                        <ul>
+                                                            <li><code>import java.util.Scanner;</code>: This line imports the <code>Scanner</code> class, which allows us to take input from the user.</li>
+                                                            <li><code>public class EvenOddChecker</code>: This is the main class declaration.</li>
+                                                            <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Step 2: Taking Input</strong></li>
+                                                </ol>
+                                                <p></p>
+                                                <ol start="4">
+                                                    <li>
+                                                        <p><strong>Create a Scanner Object:</strong>Inside the <code>main</code> method, create a&nbsp;<code>Scanner</code> object to read input from the user:</p>
+                                                        <pre><div><div><code>Scanner scanner = new Scanner(System.in);</code></div></div></pre>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Display a Prompt and Take Input:</strong>Use the <code>Scanner</code> object to display a prompt and take input from the user. Add the following lines after creating the&nbsp;<code>Scanner</code> object:</p>
+                                                        <pre><div><div><code>System.out.print(&quot;Enter an integer: &quot;);
+int number = scanner.nextInt();</code></div></div></pre>
+                                                        <ul>
+                                                            <li><code>System.out.print(&quot;Enter an integer: &quot;);</code>: This line displays a prompt to the user.</li>
+                                                            <li><code>int number = scanner.nextInt();</code>: This line reads an integer input from the user and stores it in the variable <code>number</code>.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Step 3: Checking Even or Odd</strong></li>
+                                                </ol>
+                                                <p></p>
+                                                <ol start="6">
+                                                    <li>
+                                                        <p><strong>Check Even or Odd:</strong>Use an&nbsp;<code>if</code> statement to check whether the input number is even or odd. Add the following lines after taking the input:</p>
+                                                        <pre><div><div><code>if (number % 2 == 0) {
+    System.out.println(number + &quot; is even.&quot;);
+} else {
+    System.out.println(number + &quot; is odd.&quot;);
+}</code></div></div></pre>
+                                                        <ul>
+                                                            <li><code>if (number % 2 == 0)</code>: This line checks if the remainder of dividing <code>number</code> by 2 is 0, which indicates an even number.</li>
+                                                            <li><code>System.out.println(number + &quot; is even.&quot;);</code>: If the condition is true, this line prints that the number is even.</li>
+                                                            <li><code>else</code>: If the condition is false, the program will execute the code in the <code>else</code> block.</li>
+                                                            <li><code>System.out.println(number + &quot; is odd.&quot;);</code>: This line prints that the number is odd.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Complete Code:</strong></li>
+                                                </ol>
+                                                <p></p>
+                                                <p>Putting it all together:</p>
+                                                <pre><div><div><code>import java.util.Scanner;
+
+public class EvenOddChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print(&quot;Enter an integer: &quot;);
+        int number = scanner.nextInt();
+        
+        if (number % 2 == 0) {
+            System.out.println(number + &quot; is even.&quot;);
+        } else {
+            System.out.println(number + &quot; is odd.&quot;);
+        }
+    }
+}</code></div></div></pre>
+                                                <p><strong>Explanation:</strong></p>
+                                                <ol>
+                                                    <li>Import the <code>Scanner</code> class to read input from the user.</li>
+                                                    <li>Create a <code>Scanner</code> object named <code>scanner</code>.</li>
+                                                    <li>Display a prompt asking the user to enter an integer.</li>
+                                                    <li>Use <code>nextInt()</code> to read the integer input from the user and store it in the variable <code>number</code>.</li>
+                                                    <li>Use an <code>if</code> statement to check if <code>number % 2</code> equals 0 to determine if it&apos;s even.</li>
+                                                    <li>If the condition is true, print that the number is even.</li>
+                                                    <li>If the condition is false, print that the number is odd.</li>
+                                                    <li><strong>Compile and Run:</strong></li>
+                                                </ol>
+                                                <p></p>
+                                                <ol>
+                                                    <li>
+                                                        <p><strong>Compile:</strong>Open a terminal/command prompt, navigate to the folder where you saved <code>EvenOddChecker.java</code>, and run this command to compile:</p>
+                                                        <pre><div><div><code>javac EvenOddChecker.java</code></div></div></pre>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Run:</strong>After compiling, run the program using:</p>
+                                                        <pre><div><div><code>java EvenOddChecker</code></div></div></pre>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Input:</strong>Input an integer when prompted and see whether it&apos;s even or odd.</p>
+                                                    </li>
+                                                    <li>This program illustrates the basic steps of taking input, performing a conditional check, and displaying the result. It&apos;s a great starting point for beginners learning Java programming.</li>
+                                                </ol>
+                                                <p></p>
+                                            </li>
+                                        </ol>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/EvenOddChecker" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>  
+
                                     <p><strong>3. Calculator: </strong>Create a simple calculator that can perform addition, subtraction, multiplication, and division based on user input.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(3)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content3">
+                                        <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>SimpleCalculator.java</code>.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                <pre><div><div><code>import java.util.Scanner;
+
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></div></div></pre>
+                                                <ul>
+                                                    <li><code>import java.util.Scanner;</code>: This line imports the <code>Scanner</code> class, which allows us to take input from the user.</li>
+                                                    <li><code>public class SimpleCalculator</code>: This is the main class declaration.</li>
+                                                    <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 2: Taking Input and Displaying Menu</strong></p>
+                                        <ol start="4">
+                                            <li>
+                                                <p><strong>Create a Scanner Object:</strong>Inside the <code>main</code> method, create a <code>Scanner</code> object to read input from the user:</p>
+                                                <pre><code>Scanner scanner = new Scanner(System.in);</code></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Display a Menu:</strong>Display a menu to the user with options for addition, subtraction, multiplication, and division. Add the following lines after creating the&nbsp;<code>Scanner</code> object:</p>
+                                                <pre><div><div><code>System.out.println(&quot;Select an operation:&quot;);
+System.out.println(&quot;1. Addition&quot;);
+System.out.println(&quot;2. Subtraction&quot;);
+System.out.println(&quot;3. Multiplication&quot;);
+System.out.println(&quot;4. Division&quot;);
+System.out.print(&quot;Enter your choice: &quot;);
+int choice = scanner.nextInt();</code></div></div></pre>
+                                                <ul>
+                                                    <li>The above code displays a menu and prompts the user to enter their choice.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 3: Performing the Chosen Operation</strong></p>
+                                        <ol start="6">
+                                            <li>
+                                                <p><strong>Performing the Chosen Operation:</strong>Based on the user&apos;s choice, perform the corresponding operation. Add the following code after displaying the menu:</p>
+                                                <pre><div><div><code>System.out.print(&quot;Enter the first number: &quot;);
+double num1 = scanner.nextDouble();
+
+System.out.print(&quot;Enter the second number: &quot;);
+double num2 = scanner.nextDouble();
+
+double result = 0;
+
+if (choice == 1) {
+    result = num1 + num2;
+} else if (choice == 2) {
+    result = num1 - num2;
+} else if (choice == 3) {
+    result = num1 * num2;
+} else if (choice == 4) {
+    result = num1 / num2;
+} else {
+    System.out.println(&quot;Invalid choice&quot;);
+    return;
+}
+
+System.out.println(&quot;Result: &quot; + result);</code></div></div></pre>
+                                                <ul>
+                                                    <li>The code prompts the user to enter two numbers.</li>
+                                                    <li>It uses conditional statements (<code>if</code>, <code>else if</code>, <code>else</code>) to determine which operation to perform based on the user&apos;s choice.</li>
+                                                    <li>It calculates the result and displays it.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Complete Code:</strong></p>
+                                        <p>Putting it all together:</p>
+                                        <pre><div><div>
+                                </div><div><code>import java.util.Scanner;
+
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(&quot;Select an operation:&quot;);
+        System.out.println(&quot;1. Addition&quot;);
+        System.out.println(&quot;2. Subtraction&quot;);
+        System.out.println(&quot;3. Multiplication&quot;);
+        System.out.println(&quot;4. Division&quot;);
+        System.out.print(&quot;Enter your choice: &quot;);
+        int choice = scanner.nextInt();
+        
+        System.out.print(&quot;Enter the first number: &quot;);
+        double num1 = scanner.nextDouble();
+        
+        System.out.print(&quot;Enter the second number: &quot;);
+        double num2 = scanner.nextDouble();
+        
+        double result = 0;
+        
+        if (choice == 1) {
+            result = num1 + num2;
+        } else if (choice == 2) {
+            result = num1 - num2;
+        } else if (choice == 3) {
+            result = num1 * num2;
+        } else if (choice == 4) {
+            result = num1 / num2;
+        } else {
+            System.out.println(&quot;Invalid choice&quot;);
+            return;
+        }
+        
+        System.out.println(&quot;Result: &quot; + result);
+    }
+}</code></div></div></pre>
+                                        <p><strong>Explanation:</strong></p>
+                                        <ol>
+                                            <li>We import the <code>Scanner</code> class to read input from the user.</li>
+                                            <li>We create a <code>Scanner</code> object named <code>scanner</code>.</li>
+                                            <li>We display a menu with options for different operations and prompt the user to enter their choice.</li>
+                                            <li>We read the user&apos;s choice using <code>nextInt()</code>.</li>
+                                            <li>We prompt the user to enter two numbers.</li>
+                                            <li>We use conditional statements to determine which operation to perform based on the user&apos;s choice.</li>
+                                            <li>We calculate the result based on the chosen operation.</li>
+                                            <li>We display the result.</li>
+                                        </ol>
+                                        <p><strong>Compile and Run:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Compile:</strong>Open a terminal/command prompt, navigate to the folder where you saved&nbsp;<code>SimpleCalculator.java</code>, and run this command to compile:
+                                                    <pre><code>javac SimpleCalculator.java</code></pre></p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Run:</strong>After compiling, run the program using:</p>
+                                                <pre><div><div><code>java SimpleCalculator</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Choose Operation:</strong>Choose an operation from the menu (1 for addition, 2 for subtraction, etc.).</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Enter Numbers:</strong>Enter the two numbers you want to perform the operation on.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>View Result:</strong>The program will display the result of the chosen operation.</p>
+                                            </li>
+                                        </ol>
+                                        <p>This program demonstrates the basics of creating a simple calculator in Java. It takes user input, performs arithmetic operations, and displays the result. It&apos;s a great starting point for beginners learning Java programming.</p>
+                                        
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/SimpleCalculator" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+
                                     <p><strong>4. Fibonacci Series: </strong>Write a program to generate the first n numbers in the Fibonacci sequence.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(4)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content4">
+                                        <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>FibonacciSeries.java</code>.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                <pre><div><div><code>public class FibonacciSeries {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></div></div></pre>
+                                                <ul>
+                                                    <li><code>public class FibonacciSeries</code>: This is the main class declaration.</li>
+                                                    <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 2: Taking Input</strong></p>
+                                        <ol start="4">
+                                            <li>
+                                                <p><strong>Create a Scanner Object:</strong>Inside the <code>main</code> method, create a&nbsp;<code>Scanner</code> object to read input from the user:</p>
+                                                <pre><div><div><code>import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Rest of the code
+    }
+}</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 3: Generating Fibonacci Sequence</strong></p>
+                                        <ol start="5">
+                                            <li>
+                                                <p><strong>Prompt for Input:</strong>Display a prompt to the user to enter the value of <code>n</code> (number of terms in the Fibonacci sequence). Add the following lines after creating the&nbsp;<code>Scanner</code> object:</p>
+                                                <pre><div><div><code>System.out.print(&quot;Enter the value of n: &quot;);
+int n = scanner.nextInt();</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Generate Fibonacci Series:</strong>Generate the Fibonacci series using a loop. Add the following code after prompting for the input:</p>
+                                                <pre><div><div><code>int firstTerm = 0;
+int secondTerm = 1;
+
+System.out.println(&quot;Fibonacci Series:&quot;);
+for (int i = 1; i &lt;= n; i++) {
+    System.out.print(firstTerm + &quot; &quot;);
+
+    int nextTerm = firstTerm + secondTerm;
+    firstTerm = secondTerm;
+    secondTerm = nextTerm;
+}</code></div></div></pre>
+                                                <ul>
+                                                    <li>The loop iterates from 1 to <code>n</code> to generate the Fibonacci sequence.</li>
+                                                    <li>The variables <code>firstTerm</code> and <code>secondTerm</code> store the current and next terms of the sequence.</li>
+                                                    <li>Inside the loop, the program calculates the next term, updates the variables, and prints the current term.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Complete Code:</strong></p>
+                                        <p>Putting it all together:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class FibonacciSeries {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print(&quot;Enter the value of n: &quot;);
+        int n = scanner.nextInt();
+        
+        int firstTerm = 0;
+        int secondTerm = 1;
+        
+        System.out.println(&quot;Fibonacci Series:&quot;);
+        for (int i = 1; i &lt;= n; i++) {
+            System.out.print(firstTerm + &quot; &quot;);
+            
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+    }
+}</code></div></div></pre>
+                                        <p><strong>Explanation:</strong></p>
+                                        <ol>
+                                            <li>We import the <code>Scanner</code> class to read input from the user.</li>
+                                            <li>We create a <code>Scanner</code> object named <code>scanner</code>.</li>
+                                            <li>We prompt the user to enter the value of <code>n</code>.</li>
+                                            <li>We read the user&apos;s input for <code>n</code> using <code>nextInt()</code>.</li>
+                                            <li>We initialize variables <code>firstTerm</code> and <code>secondTerm</code> to start the Fibonacci sequence.</li>
+                                            <li>We display a message indicating that we&apos;re printing the Fibonacci series.</li>
+                                            <li>We use a loop to generate and print the Fibonacci sequence.</li>
+                                            <li>Inside the loop, we calculate the next term, update variables, and print the current term.</li>
+                                        </ol>
+                                        <p><strong>Compile and Run:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Compile:</strong>Open a terminal/command prompt, navigate to the folder where you saved <code>FibonacciSeries.java</code>, and run this command to compile:</p>
+                                                <pre><div><div><code>javac FibonacciSeries.java</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Run:</strong>After compiling, run the program using:</p>
+                                                <pre><div><div><code>java FibonacciSeries</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Enter <code>n</code>:</strong>Enter the value of <code>n</code> (the number of terms in the Fibonacci sequence).</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>View Sequence:</strong>The program will generate and display the first <code>n</code> numbers in the Fibonacci sequence.</p>
+                                            </li>
+                                        </ol>
+                                        <p>This program demonstrates the basic steps of generating the Fibonacci sequence using a loop. It&apos;s a great way for beginners to practice loops and variables in Java.</p>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/FibonacciSeries" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>5. Factorial Calculator: </strong>Create a program that calculates the factorial of a given number.</p>
                                     <p><strong>6. Guess the Number: </strong>Develop a game where the computer picks a random number and the player has to guess it. Provide hints like &quot;higher&quot; or &quot;lower.&quot;</p>
                                     <p><strong>7. Prime Number Checker: </strong>Write a program that checks if a given number is prime or not.</p>
