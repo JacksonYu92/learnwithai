@@ -2925,9 +2925,9 @@ Sum of digits: 15
 
 							<!-- Search -->
 								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
+									
+									<input type="text" name="query" id="query" onkeyup="searchMenu()"placeholder="Search" />
+									
                                     
 								</section>
                                 
@@ -2936,7 +2936,7 @@ Sum of digits: 15
 								<header class="major">
 									<h2>Menu</h2>
 								</header>
-								<ul>
+								<ul id="myMenu">
 									<li><a href="index.html">Home</a></li>
 									<li><a href="learnhtml.html">HTML</a></li>
 									<li><a href="learncss.html">CSS</a></li>
@@ -3001,6 +3001,24 @@ Sum of digits: 15
                       firstVisibleContent.scrollIntoView({ behavior: 'smooth'});
                     }
                   }
+                function searchMenu() {
+                // Declare variables
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("query");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    } else {
+                    li[i].style.display = "none";
+                    }
+                }
+                }  
             </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -3016,7 +3034,7 @@ Sum of digits: 15
                 }
             </script>
             <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+            
 
 
 	</body>

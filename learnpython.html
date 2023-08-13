@@ -545,98 +545,121 @@ print(x % y)
 					</div>
 
 				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+                <div id="sidebar">
+                    <div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+                        <!-- Search -->
+                            <section id="search" class="alt">
+                                
+                                <input type="text" name="query" id="query" onkeyup="searchMenu()"placeholder="Search" />
+                                
+                                
+                            </section>
+                            
+                        <!-- Menu -->
+                        <nav id="menu">
+                            <header class="major">
+                                <h2>Menu</h2>
+                            </header>
+                            <ul id="myMenu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="learnhtml.html">HTML</a></li>
+                                <li><a href="learncss.html">CSS</a></li>
+                                <li><a href="learnjavascript.html">JavaScript</a></li>
+                                <li><a href="learnpython.html">Python</a></li>
+                                <li><a href="learnsql.html">SQL</a></li>
+                                <li><a href="learnjava.html">JAVA</a></li>
+                                <li><a href="aboutme.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
 
-							<!-- Menu -->
-							<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="learnhtml.html">HTML</a></li>
-									<li><a href="learncss.html">CSS</a></li>
-									<li><a href="learnjavascript.html">JavaScript</a></li>
-									<li><a href="learnpython.html">Python</a></li>
-									<li><a href="learnsql.html">SQL</a></li>
-									<li><a href="learnjava.html">JAVA</a></li>
-									<li><a href="aboutme.html">About</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</nav>
+                
 
-					
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>We would love to hear from you! Whether you have a question, feedback, or simply want to connect, our team is here to support you. Feel free to reach out to us through the contact form below or connect with us on our social media channels. We value your input and are committed to continuously improving your learning experience. Join our vibrant community of learners and let's embark on this exciting coding journey together. Get in touch with us today and unlock the power of AI-enhanced education.</p>
+                                <ul class="contact">
+                                    <li class="icon solid fa-envelope"><a href="contact.html">learnwithaiinfo@gmail.com</a></li>
+                            
+                                </ul>
+                            </section>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>We would love to hear from you! Whether you have a question, feedback, or simply want to connect, our team is here to support you. Feel free to reach out to us through the contact form below or connect with us on our social media channels. We value your input and are committed to continuously improving your learning experience. Join our vibrant community of learners and let's embark on this exciting coding journey together. Get in touch with us today and unlock the power of AI-enhanced education.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="contact.html">learnwithaiinfo@gmail.com</a></li>
-								
-									</ul>
-								</section>
+                        <!-- Footer -->
+                            <footer id="footer">
+                                
+                                <p class="copyright">
+                                    &copy; 2023 Learn with AI. All rights reserved. 
+                                    Generated content powered by ChatGPT, an AI language model developed by OpenAI. 
+                                    Source: <a href="https://openai.com/">OpenAI</a>. 
+                                    Demo Images: <a href="https://unsplash.com">Unsplash</a>. 
+                                    Design: <a href="https://html5up.net">HTML5 UP</a>.
+                                  </p>
+                                  
+                            </footer>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">
-										&copy; 2023 Learn with AI. All rights reserved. 
-										Generated content powered by ChatGPT, an AI language model developed by OpenAI. 
-										Source: <a href="https://openai.com/">OpenAI</a>. 
-										Demo Images: <a href="https://unsplash.com">Unsplash</a>. 
-										Design: <a href="https://html5up.net">HTML5 UP</a>.
-									  </p>
-								</footer>
+                    </div>
+                </div>
 
-						</div>
-					</div>
+        </div>
 
-			</div>
-
-		<!-- Scripts -->
-            <script>
-                // JavaScript function to toggle the visibility of the hidden content
-                function toggleContent(step) {
-                    var allContents = document.querySelectorAll('.hidden-content');
-                    var activeContent = document.getElementById('content' + step);
-              
-                    for (var i = 0; i < allContents.length; i++) {
-                      allContents[i].classList.remove('active-content');
-                    }
-              
-                    if (step !== 0) {
-                      activeContent.classList.add('active-content');
-              
-                      // Find the first visible content block and scroll to it
-                      var firstVisibleContent = document.querySelector('.active-content');
-                      firstVisibleContent.scrollIntoView({ behavior: 'smooth'});
-                    }
-                  }
-            </script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6204050276448474"
-     crossorigin="anonymous"></script>
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    <!-- Scripts -->
+  
+        <script>
+            // JavaScript function to toggle the visibility of the hidden content
+            function toggleContent(step) {
+                var allContents = document.querySelectorAll('.hidden-content');
+                var activeContent = document.getElementById('content' + step);
+          
+                for (var i = 0; i < allContents.length; i++) {
+                  allContents[i].classList.remove('active-content');
                 }
-            </script>
-            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+          
+                if (step !== 0) {
+                  activeContent.classList.add('active-content');
+          
+                  // Find the first visible content block and scroll to it
+                  var firstVisibleContent = document.querySelector('.active-content');
+                  firstVisibleContent.scrollIntoView({ behavior: 'smooth'});
+                }
+              }
+            function searchMenu() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("query");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+                }
+            }
+            }  
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6204050276448474"
+ crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
 
 	</body>
 </html>
