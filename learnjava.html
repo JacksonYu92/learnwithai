@@ -740,21 +740,2044 @@ public class FibonacciSeries {
                                     </div>
                                     
                                     <p><strong>5. Factorial Calculator: </strong>Create a program that calculates the factorial of a given number.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(5)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content5"><p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Create a New File:</strong>Create a new file and save it with a&nbsp;<code>.java</code> extension. For example, you can name it&nbsp;<code>FactorialCalculator.java</code>.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                <pre><code>import java.util.Scanner;
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></pre>
+                                                <ul>
+                                                    <li><code>import java.util.Scanner;</code>: This line imports the&nbsp;<code>Scanner</code> class, which allows us to take input from the user.</li>
+                                                    <li><code>public class FactorialCalculator</code>: This is the main class declaration.</li>
+                                                    <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 2: Taking Input</strong></p>
+                                        <ol start="4">
+                                            <li>
+                                                <p><strong>Create a Scanner Object:</strong>Inside the&nbsp;<code>main</code> method, create a&nbsp;<code>Scanner</code> object to read input from the user:</p>
+                                                <pre><code>Scanner scanner = new Scanner(System.in); </code></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 3: Calculating Factorial</strong></p>
+                                        <ol start="5">
+                                            <li>
+                                                <p><strong>Prompt for Input:</strong>Display a prompt to the user to enter the number for which they want to calculate the factorial. Add the following lines after creating the&nbsp;<code>Scanner</code> object:</p>
+                                                <pre><code>System.out.print(&quot;Enter a number: &quot;);
+int number = scanner.nextInt();</code></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Calculate Factorial:</strong>Calculate the factorial of the given number using a loop. Add the following code after prompting for input:</p>
+                                                <pre><code>int factorial = 1;
+
+for (int i = 1; i &lt;= number; i++) {
+    factorial *= i;
+}</code></pre>
+                                                <ul>
+                                                    <li>The loop iterates from 1 to the given number.</li>
+                                                    <li>The&nbsp;<code>factorial</code> variable is updated by multiplying it with the loop counter&nbsp;<code>i</code> in each iteration.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 4: Displaying Result</strong></p>
+                                        <ol start="7">
+                                            <li>
+                                                <p><strong>Display Result:</strong>Display the calculated factorial to the user. Add the following code after calculating the factorial:</p>
+                                                <pre><code>System.out.println(&quot;Factorial of &quot; + number + &quot; is: &quot; + factorial);</code></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Complete Code:</strong></p>
+                                        <p>Putting it all together:</p>
+                                        <pre><code>import java.util.Scanner;
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print(&quot;Enter a number: &quot;);
+        int number = scanner.nextInt();
+        
+        int factorial = 1;
+        
+        for (int i = 1; i &lt;= number; i++) {
+            factorial *= i;
+        }
+        
+        System.out.println(&quot;Factorial of &quot; + number + &quot; is: &quot; + factorial);
+    }
+}</code></pre>
+                                        <p><strong>Explanation:</strong></p>
+                                        <ol>
+                                            <li>We import the&nbsp;<code>Scanner</code> class to read input from the user.</li>
+                                            <li>We create a&nbsp;<code>Scanner</code> object named&nbsp;<code>scanner</code>.</li>
+                                            <li>We prompt the user to enter a number.</li>
+                                            <li>We read the user&apos;s input for the number using&nbsp;<code>nextInt()</code>.</li>
+                                            <li>We initialize the&nbsp;<code>factorial</code> variable to 1.</li>
+                                            <li>We use a loop to calculate the factorial of the given number.</li>
+                                            <li>Inside the loop, we update the&nbsp;<code>factorial</code> variable by multiplying it with the loop counter&nbsp;<code>i</code>.</li>
+                                            <li>We display the calculated factorial to the user.</li>
+                                        </ol>
+                                        <p><strong>Compile and Run:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Compile:</strong>Open a terminal/command prompt, navigate to the folder where you saved <code>FactorialCalculator.java</code>, and run this command to compile:</p>
+                                                <pre><code>javac FactorialCalculator.java </code></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Run:</strong>After compiling, run the program using:</p>
+                                                <pre><code>java FactorialCalculator</code></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Enter Number:</strong>Enter the number for which you want to calculate the factorial.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>View Result:</strong>The program will calculate and display the factorial of the entered number.</p>
+                                            </li>
+                                        </ol>
+                                        <p>This program demonstrates the basic steps of calculating the factorial of a given number using a loop. It&apos;s a great exercise for beginners to practice loops and variables in Java.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/FactorialCalculator" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>6. Guess the Number: </strong>Develop a game where the computer picks a random number and the player has to guess it. Provide hints like &quot;higher&quot; or &quot;lower.&quot;</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(6)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content6"><p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>NumberGuessingGame.java</code>.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                <pre><div><div><code>import java.util.Scanner;
+import java.util.Random;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}
+</code></div></div></pre>
+                                                <ul>
+                                                    <li><code>import java.util.Scanner;</code>: This line imports the <code>Scanner</code> class, which allows us to take input from the user.</li>
+                                                    <li><code>import java.util.Random;</code>: This line imports the <code>Random</code> class, which will help us generate random numbers.</li>
+                                                    <li><code>public class NumberGuessingGame</code>: This is the main class declaration.</li>
+                                                    <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 2: Generating a Random Number</strong></p>
+                                        <ol start="4">
+                                            <li>
+                                                <p><strong>Create Objects:</strong> Inside the <code>main</code> method, create objects for <code>Scanner</code> and&nbsp;<code>Random</code>:</p>
+                                                <pre><div><div><code>Scanner scanner = new Scanner(System.in);
+Random random = new Random();
+</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 3: Implementing the Game</strong></p>
+                                        <ol start="5">
+                                            <li>
+                                                <p><strong>Generate Random Number:</strong>Generate a random number between a specified range (e.g., 1 to 100). Add the following code after creating the objects:</p>
+                                                <pre><div><div><code>int upperBound = 100; // Adjust this to set the upper bound for the random number
+int randomNumber = random.nextInt(upperBound) + 1;
+</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Initialize Variables:</strong>Initialize variables for tracking the player&apos;s guess count and the maximum number of attempts:</p>
+                                                <pre><div><div><code>int maxAttempts = 5;
+int guessCount = 0;
+boolean hasGuessed = false;
+</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Implement the Game Loop:</strong>Create a loop that allows the player to make guesses within the maximum attempts. Add the following code after initializing variables:</p>
+                                                <pre><div><div><code>System.out.println(&quot;Welcome to the Number Guessing Game!&quot;);
+System.out.println(&quot;I have picked a number between 1 and &quot; + upperBound + &quot;. Try to guess it within &quot; + maxAttempts + &quot; attempts.&quot;);
+
+while (!hasGuessed &amp;&amp; guessCount &lt; maxAttempts) {
+    System.out.print(&quot;Attempt #&quot; + (guessCount + 1) + &quot;: Enter your guess: &quot;);
+    int guess = scanner.nextInt();
+    guessCount++;
+
+    if (guess == randomNumber) {
+        hasGuessed = true;
+        System.out.println(&quot;Congratulations! You guessed the number &quot; + randomNumber + &quot; in &quot; + guessCount + &quot; attempts.&quot;);
+    } else if (guess &lt; randomNumber) {
+        System.out.println(&quot;Try again! Guess higher.&quot;);
+    } else {
+        System.out.println(&quot;Try again! Guess lower.&quot;);
+    }
+}
+
+if (!hasGuessed) {
+    System.out.println(&quot;Sorry, you&apos;ve reached the maximum number of attempts. The correct answer was &quot; + randomNumber + &quot;.&quot;);
+}
+</code></div></div></pre>
+                                                <ul>
+                                                    <li>The loop continues as long as the player hasn&apos;t guessed correctly and hasn&apos;t exceeded the maximum attempts.</li>
+                                                    <li>The player&apos;s guess is compared to the random number, and hints (&quot;higher&quot; or &quot;lower&quot;) are provided based on the comparison.</li>
+                                                    <li>If the player doesn&apos;t guess correctly within the attempts, the correct answer is revealed.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Complete Code:</strong></p>
+                                        <p>Putting it all together:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+import java.util.Random;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        int upperBound = 100; // Adjust this to set the upper bound for the random number
+        int randomNumber = random.nextInt(upperBound) + 1;
+        int maxAttempts = 5;
+        int guessCount = 0;
+        boolean hasGuessed = false;
+
+        System.out.println(&quot;Welcome to the Number Guessing Game!&quot;);
+        System.out.println(&quot;I have picked a number between 1 and &quot; + upperBound + &quot;. Try to guess it within &quot; + maxAttempts + &quot; attempts.&quot;);
+
+        while (!hasGuessed &amp;&amp; guessCount &lt; maxAttempts) {
+            System.out.print(&quot;Attempt #&quot; + (guessCount + 1) + &quot;: Enter your guess: &quot;);
+            int guess = scanner.nextInt();
+            guessCount++;
+
+            if (guess == randomNumber) {
+                hasGuessed = true;
+                System.out.println(&quot;Congratulations! You guessed the number &quot; + randomNumber + &quot; in &quot; + guessCount + &quot; attempts.&quot;);
+            } else if (guess &lt; randomNumber) {
+                System.out.println(&quot;Try again! Guess higher.&quot;);
+            } else {
+                System.out.println(&quot;Try again! Guess lower.&quot;);
+            }
+        }
+
+        if (!hasGuessed) {
+            System.out.println(&quot;Sorry, you&apos;ve reached the maximum number of attempts. The correct answer was &quot; + randomNumber + &quot;.&quot;);
+        }
+    }
+}
+</code></div></div></pre>
+                                        <p><strong>Explanation:</strong></p>
+                                        <ol>
+                                            <li>We import the <code>Scanner</code> class to read input from the user and the <code>Random</code> class to generate random numbers.</li>
+                                            <li>We create objects for the <code>Scanner</code> and <code>Random</code> classes.</li>
+                                            <li>We generate a random number between 1 and the <code>upperBound</code> value using <code>nextInt(upperBound) + 1</code>.</li>
+                                            <li>We initialize variables for tracking the maximum attempts, the number of guesses, whether the player has guessed correctly, and display a welcome message.</li>
+                                            <li>We implement a loop that continues as long as the player hasn&apos;t guessed correctly and hasn&apos;t exceeded the maximum attempts.</li>
+                                            <li>Inside the loop, we prompt the player to enter a guess and compare it to the random number.</li>
+                                            <li>Based on the comparison, we provide hints (&quot;higher&quot; or &quot;lower&quot;) or display a congratulations message.</li>
+                                            <li>If the player doesn&apos;t guess correctly within the attempts, we reveal the correct answer.</li>
+                                        </ol>
+                                        <p><strong>Compile and Run:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Compile:</strong> Open a terminal/command prompt, navigate to the folder where you saved <code>NumberGuessingGame.java</code>, and run this command to compile:</p>
+                                                <pre><div><div><code>javac NumberGuessingGame.java
+</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Run:</strong> After compiling, run the program using:</p>
+                                                <pre><div><div><code>java NumberGuessingGame
+</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Guess Numbers:</strong> Enter your guesses and follow the hints provided by the program to try to guess the correct number within the maximum attempts.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Result:</strong> The program will display whether you guessed correctly within the attempts or if you reached the maximum number of attempts along with the correct answer.</p>
+                                            </li>
+                                        </ol>
+                                        <p>This version of the code should work as intended and provide the player with hints and a limited number of attempts to guess the correct number. It&apos;s a great way for beginners to practice loops, conditionals, user input, and random number generation in Java.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/NumberGuessingGame-3" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>7. Prime Number Checker: </strong>Write a program that checks if a given number is prime or not.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(7)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content7"><p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>PrimeNumberChecker.java</code>.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                <pre><div><div><code>import java.util.Scanner;
+
+public class PrimeNumberChecker {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></div></div></pre>
+                                                <ul>
+                                                    <li><code>import java.util.Scanner;</code>: This line imports the <code>Scanner</code> class, which allows us to take input from the user.</li>
+                                                    <li><code>public class PrimeNumberChecker</code>: This is the main class declaration.</li>
+                                                    <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 2: Getting User Input</strong></p>
+                                        <ol start="4">
+                                            <li>
+                                                <p><strong>Create a Scanner Object:</strong>Inside the <code>main</code> method, create a&nbsp;<code>Scanner</code> object to get input from the user:</p>
+                                                <pre><div><div><code>Scanner scanner = new Scanner(System.in);
+                                    </code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Prompt for Input:</strong>Ask the user to enter a number to check if it&apos;s prime or not:</p>
+                                                <pre><div><div><code>System.out.print(&quot;Enter a number: &quot;);
+int number = scanner.nextInt();</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 3: Checking if a Number is Prime</strong></p>
+                                        <ol start="6">
+                                            <li>
+                                                <p><strong>Implement the Prime Checking Logic:</strong>Create a method that checks whether a given number is prime or not. This method will return <code>true</code> if the number is prime and&nbsp;<code>false</code> otherwise:</p>
+                                                <pre><div><div><code>static boolean isPrime(int num) {
+    if (num &lt;= 1) {
+        return false;
+    }
+
+    for (int i = 2; i * i &lt;= num; i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}</code></div></div></pre>
+                                                <ul>
+                                                    <li>We start with a simple check: if the number is less than or equal to 1, it&apos;s not prime.</li>
+                                                    <li>We iterate from 2 to the square root of the number.</li>
+                                                    <li>If the number is divisible by any integer in this range, it&apos;s not prime.</li>
+                                                    <li>If none of the divisors are found, the number is prime.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 4: Using the Prime Checking Method</strong></p>
+                                        <ol start="7">
+                                            <li>
+                                                <p><strong>Call the Method and Display Result:</strong>After getting the user&apos;s input, call the&nbsp;<code>isPrime</code> method and display the result:</p>
+                                                <pre><div><div><code>if (isPrime(number)) {
+    System.out.println(number + &quot; is a prime number.&quot;);
+} else {
+    System.out.println(number + &quot; is not a prime number.&quot;);
+}</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Complete Code:</strong></p>
+                                        <p>Putting it all together:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class PrimeNumberChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print(&quot;Enter a number: &quot;);
+        int number = scanner.nextInt();
+
+        if (isPrime(number)) {
+            System.out.println(number + &quot; is a prime number.&quot;);
+        } else {
+            System.out.println(number + &quot; is not a prime number.&quot;);
+        }
+    }
+
+    static boolean isPrime(int num) {
+        if (num &lt;= 1) {
+            return false;
+        }
+
+        for (int i = 2; i * i &lt;= num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}</code></div></div></pre>
+                                        <p><strong>Explanation:</strong></p>
+                                        <ol>
+                                            <li>We import the <code>Scanner</code> class to read input from the user.</li>
+                                            <li>We create a <code>Scanner</code> object to get input from the user.</li>
+                                            <li>We prompt the user to enter a number to check if it&apos;s prime.</li>
+                                            <li>We call the <code>isPrime</code> method and display whether the number is prime or not based on the returned value.</li>
+                                            <li>The <code>isPrime</code> method checks if the number is less than or equal to 1 and then uses a loop to check for divisors.</li>
+                                        </ol>
+                                        <p><strong>Compile and Run:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Compile:</strong> Open a terminal/command prompt, navigate to the folder where you saved <code>PrimeNumberChecker.java</code>, and run this command to compile:</p>
+                                                <pre><div><div><code>javac PrimeNumberChecker.java</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Run:</strong> After compiling, run the program using:</p>
+                                                <pre><div><div><code>java PrimeNumberChecker</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Enter Number:</strong> Enter a number and the program will determine if it&apos;s prime or not.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Result:</strong> The program will display whether the entered number is prime or not.</p>
+                                            </li>
+                                        </ol>
+                                        <p>This version of the code should work as intended and accurately determine whether a given number is prime or not. It&apos;s a great exercise for beginners to practice conditionals, loops, and functions in Java.</p>
+                                        
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/PrimeNumberChecker" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>8. String Reversal: </strong>Create a program that reverses a given string.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(8)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content8"><p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>StringReversal.java</code>.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                <pre><div><div><code>import java.util.Scanner;
+
+public class StringReversal {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></div></div></pre>
+                                                <ul>
+                                                    <li><code>import java.util.Scanner;</code>: This line imports the <code>Scanner</code> class, which allows us to take input from the user.</li>
+                                                    <li><code>public class StringReversal</code>: This is the main class declaration.</li>
+                                                    <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 2: Getting User Input</strong></p>
+                                        <ol start="4">
+                                            <li>
+                                                <p><strong>Create a Scanner Object:</strong>Inside the <code>main</code> method, create a&nbsp;<code>Scanner</code> object to get input from the user:</p>
+                                                <pre><div><div><code>Scanner scanner = new Scanner(System.in);</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Prompt for Input:</strong>Ask the user to enter a string that they want to reverse:</p>
+                                                <pre><div><div><code>System.out.print(&quot;Enter a string: &quot;);
+String input = scanner.nextLine();</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 3: Reversing the String</strong></p>
+                                        <ol start="6">
+                                            <li>
+                                                <p><strong>Create a StringBuilder Object:</strong>Use the <code>StringBuilder</code> class to efficiently manipulate strings. Create a&nbsp;<code>StringBuilder</code> object and initialize it with the user&apos;s input:</p>
+                                                <pre><div><div><code>StringBuilder reversed = new StringBuilder(input);</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Reverse the String:</strong>Use the <code>reverse()</code> method of the&nbsp;<code>StringBuilder</code> class to reverse the string:</p>
+                                                <pre><div><div><code>reversed.reverse();</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 4: Displaying the Reversed String</strong></p>
+                                        <ol start="8">
+                                            <li>
+                                                <p><strong>Display the Reversed String:</strong>Finally, display the reversed string:</p>
+                                                <pre><div><div><code>System.out.println(&quot;Reversed string: &quot; + reversed.toString());
+                                    </code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Complete Code:</strong></p>
+                                        <p>Putting it all together:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class StringReversal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print(&quot;Enter a string: &quot;);
+        String input = scanner.nextLine();
+
+        StringBuilder reversed = new StringBuilder(input);
+        reversed.reverse();
+
+        System.out.println(&quot;Reversed string: &quot; + reversed.toString());
+    }
+}</code></div></div></pre>
+                                        <p><strong>Explanation:</strong></p>
+                                        <ol>
+                                            <li>We import the <code>Scanner</code> class to read input from the user.</li>
+                                            <li>We create a <code>Scanner</code> object to get input from the user.</li>
+                                            <li>We prompt the user to enter a string.</li>
+                                            <li>We use a <code>StringBuilder</code> object to manipulate strings efficiently.</li>
+                                            <li>We reverse the <code>StringBuilder</code> object using the <code>reverse()</code> method.</li>
+                                            <li>We display the reversed string using the <code>toString()</code> method.</li>
+                                        </ol>
+                                        <p><strong>Compile and Run:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Compile:</strong> Open a terminal/command prompt, navigate to the folder where you saved <code>StringReversal.java</code>, and run this command to compile:</p>
+                                                <pre><div><div><code>javac StringReversal.java</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Run:</strong> After compiling, run the program using:</p>
+                                                <pre><div><div><code>java StringReversal</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Enter String:</strong> Enter a string, and the program will display the reversed version of it.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Result:</strong> The program will display the reversed string.</p>
+                                            </li>
+                                        </ol>
+                                        <p>This version of the code should work as intended and reverse the string input by the user. It&apos;s a great exercise for beginners to practice string manipulation and user input in Java.</p>
+                                        
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/StringReversal" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+
                                     <p><strong>9. Palindrome Checker: </strong>Write a program that checks if a given string is a palindrome (reads the same forwards and backwards).</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(9)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content9"><p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <p>Absolutely! Let&apos;s create a Java program that checks whether a given string is a palindrome. A palindrome is a string that reads the same forwards and backwards.</p>
+                                            <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                            <ol>
+                                                <li>
+                                                    <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>PalindromeChecker.java</code>.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                    <pre><div><div><code>import java.util.Scanner;
+
+public class PalindromeChecker {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></div></div></pre>
+                                                    <ul>
+                                                        <li><code>import java.util.Scanner;</code>: This line imports the <code>Scanner</code> class, which allows us to take input from the user.</li>
+                                                        <li><code>public class PalindromeChecker</code>: This is the main class declaration.</li>
+                                                        <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                            <p><strong>Step 2: Getting User Input</strong></p>
+                                            <ol start="4">
+                                                <li>
+                                                    <p><strong>Create a Scanner Object:</strong>Inside the <code>main</code> method, create a&nbsp;<code>Scanner</code> object to get input from the user:</p>
+                                                    <pre><div><div><code>Scanner scanner = new Scanner(System.in);
+</code></div></div></pre>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Prompt for Input:</strong>Ask the user to enter a string that they want to check for palindrome:</p>
+                                                    <pre><div><div><code>System.out.print(&quot;Enter a string: &quot;);
+String input = scanner.nextLine();</code></div></div></pre>
+                                                </li>
+                                            </ol>
+                                            <p><strong>Step 3: Checking for Palindrome</strong></p>
+                                            <ol start="6">
+                                                <li>
+                                                    <p><strong>Removing Non-Alphanumeric Characters:</strong>We want to compare the string in a case-insensitive manner and without considering non-alphanumeric characters. Convert the input string to lowercase and remove non-alphanumeric characters:</p>
+                                                    <pre><div><div><code>input = input.toLowerCase().replaceAll(&quot;[^a-z0-9]&quot;, &quot;&quot;);
+</code></div></div></pre>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Checking for Palindrome:</strong>Compare the characters of the string from both ends:</p>
+                                                    <pre><div><div><code>boolean isPalindrome = true;
+for (int i = 0; i &lt; input.length() / 2; i++) {
+    if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+        isPalindrome = false;
+        break;
+    }
+}</code></div></div></pre>
+                                                </li>
+                                            </ol>
+                                            <p><strong>Step 4: Displaying the Result</strong></p>
+                                            <ol start="8">
+                                                <li>
+                                                    <p><strong>Display the Result:</strong>Finally, display whether the input string is a palindrome or not:</p>
+                                                    <pre><div><div><code>if (isPalindrome) {
+    System.out.println(&quot;The input string is a palindrome.&quot;);
+} else {
+    System.out.println(&quot;The input string is not a palindrome.&quot;);
+}</code></div></div></pre>
+                                                </li>
+                                            </ol>
+                                            <p><strong>Complete Code:</strong></p>
+                                            <p>Putting it all together:</p>
+                                            <pre><div><div><code>import java.util.Scanner;
+
+public class PalindromeChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print(&quot;Enter a string: &quot;);
+        String input = scanner.nextLine();
+
+        input = input.toLowerCase().replaceAll(&quot;[^a-z0-9]&quot;, &quot;&quot;);
+
+        boolean isPalindrome = true;
+        for (int i = 0; i &lt; input.length() / 2; i++) {
+            if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        if (isPalindrome) {
+            System.out.println(&quot;The input string is a palindrome.&quot;);
+        } else {
+            System.out.println(&quot;The input string is not a palindrome.&quot;);
+        }
+    }
+}</code></div></div></pre>
+                                            <p><strong>Explanation:</strong></p>
+                                            <ol>
+                                                <li>We import the <code>Scanner</code> class to read input from the user.</li>
+                                                <li>We create a <code>Scanner</code> object to get input from the user.</li>
+                                                <li>We prompt the user to enter a string.</li>
+                                                <li>We convert the input string to lowercase and remove non-alphanumeric characters.</li>
+                                                <li>We use a loop to compare characters from both ends to check for palindrome.</li>
+                                            </ol>
+                                            <p><strong>Compile and Run:</strong></p>
+                                            <ol>
+                                                <li>
+                                                    <p><strong>Compile:</strong> Open a terminal/command prompt, navigate to the folder where you saved <code>PalindromeChecker.java</code>, and run this command to compile:</p>
+                                                    <pre><div><div><code>javac PalindromeChecker.java</code></div></div></pre>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Run:</strong> After compiling, run the program using:</p>
+                                                    <pre><div><div><code>java PalindromeChecker</code></div></div></pre>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Enter String:</strong> Enter a string, and the program will determine if it&apos;s a palindrome or not.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Result:</strong> The program will display whether the entered string is a palindrome or not.</p>
+                                                </li>
+                                            </ol>
+                                            <p>This version of the code should work as intended and accurately determine whether a given string is a palindrome. It&apos;s a great exercise for beginners to practice string manipulation and loops in Java.</p>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/PalindromeChecker" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>10. Simple To-Do List: </strong>Build a basic to-do list application that allows users to add, view, and remove tasks.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(10)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content10">
+                                        <p><strong>Step 1: Setting Up the Basics</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Open a Text Editor:</strong>Open a plain text editor like Notepad (Windows), TextEdit (macOS), or any code editor you prefer.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Create a New File:</strong>Create a new file and save it with a <code>.java</code> extension. For example, you can name it <code>TodoListApp.java</code>.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>Write the Basic Structure:</strong>Start by writing the basic structure of a Java program:</p>
+                                                <pre><div><div><code>import java.util.ArrayList;
+import java.util.Scanner;
+
+public class TodoListApp {
+    public static void main(String[] args) {
+        // Code will go here
+    }
+}</code></div></div></pre>
+                                                <ul>
+                                                    <li><code>import java.util.ArrayList;</code>: This line imports the <code>ArrayList</code> class, which we&apos;ll use to store tasks.</li>
+                                                    <li><code>import java.util.Scanner;</code>: This line imports the <code>Scanner</code> class for user input.</li>
+                                                    <li><code>public class TodoListApp</code>: This is the main class declaration.</li>
+                                                    <li><code>public static void main(String[] args)</code>: This is the main method where our program&apos;s code will run.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 2: Creating the To-Do List</strong></p>
+                                        <ol start="4">
+                                            <li>
+                                                <p><strong>Creating the ArrayList:</strong>Inside the <code>main</code> method, create an <code>ArrayList</code> to store the tasks:</p>
+                                                <pre><div><div><code>ArrayList&lt;String&gt; tasks = new ArrayList&lt;&gt;();
+                                        </code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 3: Adding Tasks</strong></p>
+                                        <ol start="5">
+                                            <li>
+                                                <p><strong>Creating a Scanner Object:</strong>Create a <code>Scanner</code> object to get input from the user:</p>
+                                                <pre><div><div><code>Scanner scanner = new Scanner(System.in);
+                                        </code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Adding Tasks:</strong>Implement a loop to let the user add tasks to the list. Ask the user for input and add the task to the list:</p>
+                                                <pre><div><div><code>while (true) {
+    System.out.print(&quot;Enter a task (or &apos;exit&apos; to quit): &quot;);
+    String task = scanner.nextLine();
+    if (task.equalsIgnoreCase(&quot;exit&quot;)) {
+        break;
+    }
+    tasks.add(task);
+}</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Step 4: Viewing and Removing Tasks</strong></p>
+                                        <ol start="7">
+                                            <li>
+                                                <p><strong>Viewing and Removing Tasks:</strong>After adding tasks, give the user options to view or remove tasks. Implement a loop to show the menu and process user choices:</p>
+                                                <pre><div><div><code>while (true) {
+System.out.println("\nChoose an option:");
+System.out.println("1. View tasks");
+System.out.println("2. Remove a task");
+System.out.println("3. Quit");
+System.out.print("Enter your choice: ");
+int choice = scanner.nextInt();
+scanner.nextLine(); // Consume newline
+
+switch (choice) {
+    case 1:
+        System.out.println("Tasks:");
+        for (int i = 0; i < tasks.size(); i++) {
+            System.out.println((i + 1) + ". " + tasks.get(i));
+        }
+        break;
+
+    case 2:
+        System.out.print("Enter the task number to remove: ");
+        int taskNumber = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+        if (taskNumber >= 1 && taskNumber <= tasks.size()) {
+            tasks.remove(taskNumber - 1);
+            System.out.println("Task removed.");
+        } else {
+            System.out.println("Invalid task number.");
+        }
+        break;
+
+    case 3:
+        System.out.println("Goodbye!");
+        return;
+
+    default:
+        System.out.println("Invalid choice.");
+        break;
+}
+}</code></div></div></pre>
+                                            </li>
+                                        </ol>
+                                        <p><strong>Complete Code:</strong></p>
+                                        <p>Putting it all together:</p>
+                                        <pre><div><div><code>import java.util.ArrayList;
+import java.util.Scanner;
+
+public class TodoListApp {
+    public static void main(String[] args) {
+        ArrayList<String> tasks = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Enter a task (or 'exit' to quit): ");
+            String task = scanner.nextLine();
+            if (task.equalsIgnoreCase("exit")) {
+                break;
+            }
+            tasks.add(task);
+        }
+
+        while (true) {
+            System.out.println("\nChoose an option:");
+            System.out.println("1. View tasks");
+            System.out.println("2. Remove a task");
+            System.out.println("3. Quit");
+            System.out.print("Enter your choice: ");
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume newline
+
+            switch (choice) {
+                case 1:
+                    System.out.println("Tasks:");
+                    for (int i = 0; i < tasks.size(); i++) {
+                        System.out.println((i + 1) + ". " + tasks.get(i));
+                    }
+                    break;
+
+                case 2:
+                    System.out.print("Enter the task number to remove: ");
+                    int taskNumber = scanner.nextInt();
+                    scanner.nextLine(); // Consume newline
+                    if (taskNumber >= 1 && taskNumber <= tasks.size()) {
+                        tasks.remove(taskNumber - 1);
+                        System.out.println("Task removed.");
+                    } else {
+                        System.out.println("Invalid task number.");
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("Goodbye!");
+                    return;
+
+                default:
+                    System.out.println("Invalid choice.");
+                    break;
+            }
+        }
+    }
+}</code></div></div></pre>
+                                        <p><strong>Explanation:</strong></p>
+                                        <ol>
+                                            <li>We import the <code>ArrayList</code> class to store tasks and the <code>Scanner</code> class to read input from the user.</li>
+                                            <li>We create an <code>ArrayList</code> to store tasks and a <code>Scanner</code> object to get input from the user.</li>
+                                            <li>We implement a loop to add tasks to the list. The user can type &quot;exit&quot; to stop adding tasks.</li>
+                                            <li>We implement another loop to give the user options to view tasks, remove tasks, or quit.</li>
+                                            <li>For viewing tasks, we iterate through the list and display task numbers along with their descriptions.</li>
+                                            <li>For removing tasks, we ask the user for a task number and remove the corresponding task if valid.</li>
+                                            <li>The program ends when the user chooses to quit.</li>
+                                        </ol>
+                                        <p><strong>Compile and Run:</strong></p>
+                                        <ol>
+                                            <li>
+                                                <p><strong>Compile:</strong> Open a terminal/command prompt, navigate to the folder where you saved <code>TodoListApp.java</code>, and run this command to compile:</p>
+                                                <pre><div><div><code>javac TodoListApp.java</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Run:</strong> After compiling, run the program using:</p>
+                                                <pre><div><div><code>java TodoListApp</code></div></div></pre>
+                                            </li>
+                                            <li>
+                                                <p><strong>Add Tasks:</strong> Add tasks one by one, and when you&apos;re done, type &quot;exit&quot;.</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>View and Remove Tasks:</strong> After adding tasks, choose options to view, remove, or quit the application.</p>
+                                            </li>
+                                        </ol>
+                                        <p>This version of the code should work as intended and create a basic to-do list application that allows users to add, view, and remove tasks. It&apos;s a great exercise for beginners to practice using <code>ArrayList</code>, loops, and user input in Java.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/TodoListApp#TodoListApp.java" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>11. Multiplication Table: </strong>Generate a multiplication table for a given number.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(11)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content11">
+                                        <p><strong>Step 1: Import Required Classes</strong></p>
+                                        <pre><div><div><code>import java.util.Scanner;
+</code></div></div></pre>
+                                        <ul>
+                                            <li>We import the <code>Scanner</code> class to read user input.</li>
+                                        </ul>
+                                        <p><strong>Step 2: Create a Class and Main Method</strong></p>
+                                        <pre><div><div><code>public class MultiplicationTable {
+    public static void main(String[] args) {
+        // Code will be added here
+    }
+}
+</code></div></div></pre>
+                                        <ul>
+                                            <li>We create a class named <code>MultiplicationTable</code> and define the <code>main</code> method as the entry point of our program.</li>
+                                        </ul>
+                                        <p><strong>Step 3: Read the Input Number</strong></p>
+                                        <pre><div><div><code>Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter a number: &quot;);
+        int number = scanner.nextInt();
+</code></div></div></pre>
+                                        <ul>
+                                            <li>We create a <code>Scanner</code> object to read user input.</li>
+                                            <li>We prompt the user to enter a number and store it in the <code>number</code> variable.</li>
+                                        </ul>
+                                        <p><strong>Step 4: Generate and Display the Multiplication Table</strong></p>
+                                        <pre><div><div><code>System.out.println(&quot;Multiplication Table for &quot; + number + &quot;:&quot;);
+        for (int i = 1; i &lt;= 10; i++) {
+            int result = number * i;
+            System.out.println(number + &quot; * &quot; + i + &quot; = &quot; + result);
+        }
+</code></div></div></pre>
+                                        <ul>
+                                            <li>We display a header indicating the number for which we&apos;re generating the table.</li>
+                                            <li>We use a <code>for</code> loop to iterate from 1 to 10.</li>
+                                            <li>Inside the loop, we calculate the multiplication result and display it in the format <code>&quot;number * i = result&quot;</code>.</li>
+                                        </ul>
+                                        <p><strong>Step 5: Close Scanner</strong></p>
+                                        <pre><div><div><code>        scanner.close();
+</code></div></div></pre>
+                                        <ul>
+                                            <li>We close the <code>Scanner</code> to free up system resources.</li>
+                                        </ul>
+                                        <p><strong>Step 6: Compile and Run</strong></p>
+                                        <ol>
+                                            <li>Open a text editor and copy the code into a file named <code>MultiplicationTable.java</code>.</li>
+                                            <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                            <li>Compile the code: <code>javac MultiplicationTable.java</code></li>
+                                            <li>Run the program: <code>java MultiplicationTable</code></li>
+                                        </ol>
+                                        <p><strong>Output Example:</strong>For example, if the user enters the number <code>5</code>, the program would output:</p>
+                                        <pre><div><div><code>Enter a number: 5
+Multiplication Table for 5:
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
+</code></div></div></pre>
+                                        <p>This program demonstrates the use of loops and basic arithmetic operations in Java to generate a multiplication table for a given number. It&apos;s a beginner-friendly exercise that helps you practice essential coding concepts.</p>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/MultiplicationTable" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>12. Find the Largest Number: </strong>Write a program that finds the largest number in an array of integers.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(12)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content12">
+                                        <p><strong>Step 1: Import Required Classes</strong></p>
+                                                                                <pre><div><div><code>import java.util.Scanner;
+</code></div></div></pre>
+                                                                                <ul>
+                                                                                    <li>We import the <code>Scanner</code> class to read user input.</li>
+                                                                                </ul>
+                                                                                <p><strong>Step 2: Create a Class and Main Method</strong></p>
+                                                                                <pre><div><div><code>public class LargestNumberInArray {
+    public static void main(String[] args) {
+        // Code will be added here
+    }
+}
+</code></div></div></pre>
+                                                                                <ul>
+                                                                                    <li>We create a class named <code>LargestNumberInArray</code> and define the <code>main</code> method as the entry point of our program.</li>
+                                                                                </ul>
+                                                                                <p><strong>Step 3: Read Array Size and Elements</strong></p>
+                                                                                <pre><div><div><code>        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter the number of elements: &quot;);
+        int n = scanner.nextInt();
+        
+        int[] array = new int[n];
+        System.out.println(&quot;Enter the elements:&quot;);
+        for (int i = 0; i &lt; n; i++) {
+            array[i] = scanner.nextInt();
+        }
+</code></div></div></pre>
+                                                                                <ul>
+                                                                                    <li>We create a <code>Scanner</code> object to read user input.</li>
+                                                                                    <li>We prompt the user to enter the number of elements in the array (<code>n</code>) and store it.</li>
+                                                                                    <li>We create an array called <code>array</code> with a size of <code>n</code> to store the integers.</li>
+                                                                                    <li>We use a loop to read and store each element in the array.</li>
+                                                                                </ul>
+                                                                                <p><strong>Step 4: Find the Largest Number</strong></p>
+                                                                                <pre><div><div><code>int largest = array[0]; // Assume the first element is the largest
+        for (int i = 1; i &lt; n; i++) {
+            if (array[i] &gt; largest) {
+                largest = array[i];
+            }
+        }
+</code></div></div></pre>
+                                                                                <ul>
+                                                                                    <li>We initialize a variable <code>largest</code> with the value of the first element in the array.</li>
+                                                                                    <li>We use a loop to iterate through the array starting from the second element.</li>
+                                                                                    <li>If an element is greater than the current value of <code>largest</code>, we update <code>largest</code> with the new value.</li>
+                                                                                </ul>
+                                                                                <p><strong>Step 5: Display the Result</strong></p>
+                                                                                <pre><div><div><code>System.out.println(&quot;The largest number in the array is: &quot; + largest);
+</code></div></div></pre>
+                                                                                <ul>
+                                                                                    <li>We display the largest number found in the array.</li>
+                                                                                </ul>
+                                                                                <p><strong>Step 6: Close Scanner</strong></p>
+                                                                                <pre><div><div><code>scanner.close();
+
+</code></div></div></pre>
+                                                                                <ul>
+                                                                                    <li>We close the <code>Scanner</code> to free up system resources.</li>
+                                                                                </ul>
+                                                                                <p><strong>Complete Code:</strong>Here&apos;s the complete code for the program:</p>
+                                                                                <pre><div><div><code>import java.util.Scanner;
+
+public class LargestNumberInArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter the number of elements: &quot;);
+        int n = scanner.nextInt();
+        
+        int[] array = new int[n];
+        System.out.println(&quot;Enter the elements:&quot;);
+        for (int i = 0; i &lt; n; i++) {
+            array[i] = scanner.nextInt();
+        }
+        
+        int largest = array[0];
+        for (int i = 1; i &lt; n; i++) {
+            if (array[i] &gt; largest) {
+                largest = array[i];
+            }
+        }
+        
+        System.out.println(&quot;The largest number in the array is: &quot; + largest);
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                                                                <p><strong>Running the Program:</strong></p>
+                                                                                <ol>
+                                                                                    <li>Open a text editor and copy the code into a file named <code>LargestNumberInArray.java</code>.</li>
+                                                                                    <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                                                                    <li>Compile the code: <code>javac LargestNumberInArray.java</code></li>
+                                                                                    <li>Run the program: <code>java LargestNumberInArray</code></li>
+                                                                                </ol>
+                                                                                <p><strong>Output Example:</strong>For example, if the user enters the array <code>[5, 10, 2, 8, 15]</code>, the program would output:</p>
+                                                                                <pre><div><div><code>Enter the number of elements: 5
+Enter the elements:
+5
+10
+2
+8
+15
+The largest number in the array is: 15
+</code></div></div></pre>
+                                                                                <p>This program demonstrates how to use loops and conditional statements in Java to find the largest number in an array of integers. It&apos;s a beginner-friendly exercise that helps you practice essential coding concepts.</p>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/LargestNumberInArray" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>13. Sorting Algorithms: </strong>Implement sorting algorithms like Bubble Sort or Selection Sort to arrange an array of numbers in ascending order.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(13)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content13">
+                                        <p>Sure, let&apos;s implement the Bubble Sort and Selection Sort algorithms in Java to arrange an array of numbers in ascending order. Here&apos;s a step-by-step explanation for each algorithm:</p>
+                                                                                                                        <h3>Bubble Sort:</h3>
+                                                                                                                        <p><strong>Step 1: Create a Class and Main Method</strong></p>
+                                                                                                                        <pre><div><div><code>public class BubbleSort {
+    public static void main(String[] args) {
+        // Code will be added here
+    }
+}
+</code></div></div></pre>
+                                                                                                                        <p><strong>Step 2: Read Array Size and Elements</strong></p>
+                                                                                                                        <pre><div><div><code>        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter the number of elements: &quot;);
+        int n = scanner.nextInt();
+        
+        int[] array = new int[n];
+        System.out.println(&quot;Enter the elements:&quot;);
+        for (int i = 0; i &lt; n; i++) {
+            array[i] = scanner.nextInt();
+        }
+</code></div></div></pre>
+                                                                                                                        <p><strong>Step 3: Implement Bubble Sort Algorithm</strong></p>
+                                                                                                                        <pre><div><div><code>        for (int i = 0; i &lt; n - 1; i++) {
+            for (int j = 0; j &lt; n - i - 1; j++) {
+                if (array[j] &gt; array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+</code></div></div></pre>
+                                                                                                                        <p><strong>Step 4: Display Sorted Array</strong></p>
+                                                                                                                        <pre><div><div><code>        System.out.println(&quot;Sorted array (Bubble Sort):&quot;);
+        for (int num : array) {
+            System.out.print(num + &quot; &quot;);
+        }
+</code></div></div></pre>
+                                                                                                                        <h3>Selection Sort:</h3>
+                                                                                                                        <p><strong>Step 1: Create a Class and Main Method</strong></p>
+                                                                                                                        <pre><div><div><code>public class SelectionSort {
+    public static void main(String[] args) {
+        // Code will be added here
+    }
+}
+</code></div></div></pre>
+                                                                                                                        <p><strong>Step 2: Read Array Size and Elements</strong></p>
+                                                                                                                        <pre><div><div><code>        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter the number of elements: &quot;);
+        int n = scanner.nextInt();
+        
+        int[] array = new int[n];
+        System.out.println(&quot;Enter the elements:&quot;);
+        for (int i = 0; i &lt; n; i++) {
+            array[i] = scanner.nextInt();
+        }
+</code></div></div></pre>
+                                                                                                                        <p><strong>Step 3: Implement Selection Sort Algorithm</strong></p>
+                                                                                                                        <pre><div><div><code>        for (int i = 0; i &lt; n - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j &lt; n; j++) {
+                if (array[j] &lt; array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            int temp = array[minIndex];
+            array[minIndex] = array[i];
+            array[i] = temp;
+        }
+</code></div></div></pre>
+                                                                                                                        <p><strong>Step 4: Display Sorted Array</strong></p>
+                                                                                                                        <pre><div><div><code>        System.out.println(&quot;Sorted array (Selection Sort):&quot;);
+        for (int num : array) {
+            System.out.print(num + &quot; &quot;);
+        }
+</code></div></div></pre>
+                                                                                                                        <p><strong>Step 5: Close Scanner</strong></p>
+                                                                                                                        <pre><div><div><code>        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                                                                                                        <p><strong>Complete Codes:</strong>Here are the complete codes for Bubble Sort and Selection Sort:</p>
+                                                                                                                        <p><strong>BubbleSort.java:</strong></p>
+                                                                                                                        <pre><div><div><code>import java.util.Scanner;
+
+public class BubbleSort {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter the number of elements: &quot;);
+        int n = scanner.nextInt();
+        
+        int[] array = new int[n];
+        System.out.println(&quot;Enter the elements:&quot;);
+        for (int i = 0; i &lt; n; i++) {
+            array[i] = scanner.nextInt();
+        }
+        
+        for (int i = 0; i &lt; n - 1; i++) {
+            for (int j = 0; j &lt; n - i - 1; j++) {
+                if (array[j] &gt; array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+        
+        System.out.println(&quot;Sorted array (Bubble Sort):&quot;);
+        for (int num : array) {
+            System.out.print(num + &quot; &quot;);
+        }
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                                                                                                        <p><strong>SelectionSort.java:</strong></p>
+                                                                                                                        <pre><div><div><code>import java.util.Scanner;
+
+public class SelectionSort {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter the number of elements: &quot;);
+        int n = scanner.nextInt();
+        
+        int[] array = new int[n];
+        System.out.println(&quot;Enter the elements:&quot;);
+        for (int i = 0; i &lt; n; i++) {
+            array[i] = scanner.nextInt();
+        }
+        
+        for (int i = 0; i &lt; n - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j &lt; n; j++) {
+                if (array[j] &lt; array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            int temp = array[minIndex];
+            array[minIndex] = array[i];
+            array[i] = temp;
+        }
+        
+        System.out.println(&quot;Sorted array (Selection Sort):&quot;);
+        for (int num : array) {
+            System.out.print(num + &quot; &quot;);
+        }
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                                                                                                        <p><strong>Running the Programs:</strong></p>
+                                                                                                                        <ol>
+                                                                                                                            <li>Open a text editor and copy the code into two separate files named <code>BubbleSort.java</code> and <code>SelectionSort.java</code>.</li>
+                                                                                                                            <li>Open a terminal/command prompt and navigate to the folder containing the files.</li>
+                                                                                                                            <li>Compile the codes: <code>javac BubbleSort.java</code> and <code>javac SelectionSort.java</code></li>
+                                                                                                                            <li>Run the programs: <code>java BubbleSort</code> and <code>java SelectionSort</code></li>
+                                                                                                                        </ol>
+                                                                                                                        <p><strong>Output Example (Bubble Sort):</strong>For example, if the user enters the array <code>[64, 25, 12, 22, 11]</code>, the program would output:</p>
+                                                                                                                        <pre><div><div><code>Enter the number of elements: 5
+Enter the elements:
+64
+25
+12
+22
+11
+Sorted array (Bubble Sort):
+11 12 22 25 64
+</code></div></div></pre>
+                                                                                                                        <p><strong>Output Example (Selection Sort):</strong>For example, if the user enters the array <code>[64, 25, 12, 22, 11]</code>, the program would output:</p>
+                                                                                                                        <pre><div><div><code>Enter the number of elements: 5
+Enter the elements:
+64
+25
+12
+22
+11
+Sorted array (Selection Sort):
+11 12 22 25 64
+</code></div></div></pre>
+                                                                                                                        <p>These programs demonstrate the implementation of sorting algorithms in Java and are great exercises for practicing coding concepts.</p>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/bubble-and-selection-sort" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>14. Prime Factorization: </strong>Create a program that finds the prime factors of a given number.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(14)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content14">
+                                        <p>Sure, let&apos;s create a Java program that finds the prime factors of a given number. Here&apos;s a step-by-step explanation:</p>
+                                                                                                                                                                <p><strong>Step 1: Create a Class and Main Method</strong></p>
+                                                                                                                                                                <pre><div><div><code>public class PrimeFactors {
+    public static void main(String[] args) {
+        // Code will be added here
+    }
+}
+</code></div></div></pre>
+                                                                                                                                                                <p><strong>Step 2: Read the Input Number</strong></p>
+                                                                                                                                                                <pre><div><div><code>       Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter a number: &quot;);
+        int num = scanner.nextInt();
+</code></div></div></pre>
+                                                                                                                                                                <ul>
+                                                                                                                                                                    <li>We create a <code>Scanner</code> object to read user input.</li>
+                                                                                                                                                                    <li>We prompt the user to enter a number and store it in the variable <code>num</code>.</li>
+                                                                                                                                                                </ul>
+                                                                                                                                                                <p><strong>Step 3: Find Prime Factors</strong></p>
+                                                                                                                                                                <pre><div><div><code>        System.out.print(&quot;Prime factors of &quot; + num + &quot;: &quot;);
+        for (int i = 2; i &lt;= num; i++) {
+            while (num % i == 0) {
+                System.out.print(i + &quot; &quot;);
+                num /= i;
+            }
+        }
+</code></div></div></pre>
+                                                                                                                                                                <ul>
+                                                                                                                                                                    <li>We use a loop to iterate from 2 up to the value of <code>num</code>.</li>
+                                                                                                                                                                    <li>Inside the loop, we use a while loop to divide <code>num</code> by the current value of <code>i</code> as long as <code>num</code> is divisible by <code>i</code>. This finds the prime factors of <code>num</code>.</li>
+                                                                                                                                                                </ul>
+                                                                                                                                                                <p><strong>Step 4: Close Scanner</strong></p>
+                                                                                                                                                                <pre><div><div><code>        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                                                                                                                                                <p><strong>Complete Code:</strong>Here&apos;s the complete code for the program:</p>
+                                                                                                                                                                <pre><div><div><code>import java.util.Scanner;
+
+public class PrimeFactors {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(&quot;Enter a number: &quot;);
+        int num = scanner.nextInt();
+        
+        System.out.print(&quot;Prime factors of &quot; + num + &quot;: &quot;);
+        for (int i = 2; i &lt;= num; i++) {
+            while (num % i == 0) {
+                System.out.print(i + &quot; &quot;);
+                num /= i;
+            }
+        }
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                                                                                                                                                <p><strong>Running the Program:</strong></p>
+                                                                                                                                                                <ol>
+                                                                                                                                                                    <li>Open a text editor and copy the code into a file named <code>PrimeFactors.java</code>.</li>
+                                                                                                                                                                    <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                                                                                                                                                    <li>Compile the code: <code>javac PrimeFactors.java</code></li>
+                                                                                                                                                                    <li>Run the program: <code>java PrimeFactors</code></li>
+                                                                                                                                                                </ol>
+                                                                                                                                                                <p><strong>Output Example:</strong>For example, if the user enters the number <code>60</code>, the program would output:</p>
+                                                                                                                                                                <pre><div><div><code>Enter a number: 60
+Prime factors of 60: 2 2 3 5
+</code></div></div></pre>
+                                                                                                                                                                <p>This program demonstrates how to find the prime factors of a given number using loops and division. It&apos;s a great example for practicing fundamental coding concepts.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/PrimeFactors" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>15. Calculator with Memory: </strong>Enhance the calculator from exercise 3 by adding a memory feature that allows you to store and recall numbers.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(15)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content15">
+                                        <p>Absolutely, let&apos;s create a Java calculator with memory that can perform basic arithmetic operations and includes a memory feature. Here&apos;s a step-by-step explanation:</p>
+                                        <p><strong>Step 1: Import Required Libraries</strong></p>
+                                        <pre><div><div><code>import java.util.Scanner;
+</code></div></div></pre>
+                                        <p><strong>Step 2: Create the Main Class</strong></p>
+                                        <pre><div><div><code>public class MemoryCalculator {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+double memory = 0;
+
+while (true) {
+System.out.println(&quot;Choose an operation:&quot;);
+System.out.println(&quot;1. Addition&quot;);
+System.out.println(&quot;2. Subtraction&quot;);
+System.out.println(&quot;3. Multiplication&quot;);
+System.out.println(&quot;4. Division&quot;);
+System.out.println(&quot;5. Recall Memory&quot;);
+System.out.println(&quot;6. Clear Memory&quot;);
+System.out.println(&quot;7. Quit&quot;);
+System.out.print(&quot;Enter your choice: &quot;);
+int choice = scanner.nextInt();
+
+switch (choice) {
+case 1:
+memory = performOperation(&quot;+&quot;, memory);
+break;
+case 2:
+memory = performOperation(&quot;-&quot;, memory);
+break;
+case 3:
+memory = performOperation(&quot;*&quot;, memory);
+break;
+case 4:
+memory = performOperation(&quot;/&quot;, memory);
+break;
+case 5:
+System.out.println(&quot;Memory: &quot; + memory);
+break;
+case 6:
+memory = 0;
+System.out.println(&quot;Memory cleared.&quot;);
+break;
+case 7:
+System.out.println(&quot;Goodbye!&quot;);
+return;
+default:
+System.out.println(&quot;Invalid choice.&quot;);
+break;
+}
+}
+}
+</code></div></div></pre>
+                                        <p><strong>Step 3: Define the performOperation Method</strong></p>
+                                        <pre><div><div><code>   private static double performOperation(String operator, double memory) {
+Scanner scanner = new Scanner(System.in);
+System.out.print(&quot;Enter a number: &quot;);
+double num1 = scanner.nextDouble();
+System.out.print(&quot;Enter another number: &quot;);
+double num2 = scanner.nextDouble();
+double result = 0;
+
+switch (operator) {
+case &quot;+&quot;:
+result = num1 + num2;
+break;
+case &quot;-&quot;:
+result = num1 - num2;
+break;
+case &quot;*&quot;:
+result = num1 * num2;
+break;
+case &quot;/&quot;:
+result = num1 / num2;
+break;
+}
+
+memory = result;
+System.out.println(&quot;Result: &quot; + result);
+return memory;
+}
+}
+</code></div></div></pre>
+                                        <p><strong>Step 4: Complete Code</strong>Here&apos;s the complete code for the calculator with memory:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class MemoryCalculator {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+double memory = 0;
+
+while (true) {
+// Code from Step 2
+}
+}
+
+private static double performOperation(String operator, double memory) {
+// Code from Step 3
+}
+}
+</code></div></div></pre>
+                                        <p><strong>Running the Program:</strong></p>
+                                        <ol>
+                                            <li>Create a file named <code>MemoryCalculator.java</code>.</li>
+                                            <li>Copy and paste the complete code into the file.</li>
+                                            <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                            <li>Compile the code: <code>javac MemoryCalculator.java</code></li>
+                                            <li>Run the program: <code>java MemoryCalculator</code></li>
+                                        </ol>
+                                        <p><strong>Using the Calculator:</strong></p>
+                                        <ul>
+                                            <li>The program will display a menu where you can choose the operation you want to perform.</li>
+                                            <li>For operations that require two numbers, you&apos;ll be prompted to enter those numbers.</li>
+                                            <li>You can recall the stored memory value, clear the memory, or quit the calculator using the respective options.</li>
+                                        </ul>
+                                        <p><strong>Output Example:</strong>For example, you can perform addition, subtraction, multiplication, and division, and the memory will store the most recent result.</p>
+                                        <p><strong>Note:</strong> This program demonstrates the basic concept of creating a calculator with memory in Java. You can build upon this foundation to add more features and improvements as needed.</p>                                                                                                                       
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/MemoryCalculator" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>16. Rock-Paper-Scissors Game: </strong>Build a game where the user plays rock-paper-scissors against the computer.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(16)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content16">
+                                        <p>Certainly! Let&apos;s create a Java game where the user plays rock-paper-scissors against the computer. I&apos;ll explain each step and line of code in detail to make it beginner-friendly. Here&apos;s how you can do it:</p>
+                                        <p><strong>Step 1: Import Required Libraries</strong></p>
+                                        <pre><div><div><code>import java.util.Scanner;
+import java.util.Random;
+</code></div></div></pre>
+                                        <p>Here, we import the Scanner class to take user input and the Random class to generate random numbers, which will be used for the computer's choice.</p>
+                                        <p><strong>Step 2: Create the Main Class</strong></p>
+                                        <pre><div><div><code>public class RockPaperScissorsGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        
+        System.out.println(&quot;Welcome to Rock-Paper-Scissors Game!&quot;);
+        
+        while (true) {
+            System.out.println(&quot;\nChoose:&quot;);
+            System.out.println(&quot;1. Rock&quot;);
+            System.out.println(&quot;2. Paper&quot;);
+            System.out.println(&quot;3. Scissors&quot;);
+            System.out.println(&quot;4. Quit&quot;);
+            System.out.print(&quot;Enter your choice: &quot;);
+            int userChoice = scanner.nextInt();
+            
+            if (userChoice == 4) {
+                System.out.println(&quot;Thank you for playing!&quot;);
+                break;
+            }
+            
+            int computerChoice = random.nextInt(3) + 1;
+            
+            System.out.println(&quot;Computer chooses: &quot; + getChoiceName(computerChoice));
+            System.out.println(&quot;You choose: &quot; + getChoiceName(userChoice));
+            
+            int result = determineWinner(userChoice, computerChoice);
+            
+            if (result == 0) {
+                System.out.println(&quot;It&apos;s a tie!&quot;);
+            } else if (result == 1) {
+                System.out.println(&quot;You win!&quot;);
+            } else {
+                System.out.println(&quot;Computer wins!&quot;);
+            }
+        }
+        
+        scanner.close();
+    }
+</code></div></div></pre>
+                                        <p>In this step, we set up the main class. We create a Scanner object to read user input and a Random object to generate random numbers. The while (true) loop is used to keep the game running indefinitely until the user chooses to quit (option 4). The scanner.close() statement closes the scanner to prevent resource leaks.</p>
+
+                                        <p><strong>Step 3: Define getChoiceName Method</strong></p>
+                                        <pre><div><div><code>    private static String getChoiceName(int choice) {
+        switch (choice) {
+            case 1:
+                return &quot;Rock&quot;;
+            case 2:
+                return &quot;Paper&quot;;
+            case 3:
+                return &quot;Scissors&quot;;
+            default:
+                return &quot;Invalid choice&quot;;
+        }
+    }
+</code></div></div></pre>               <p>The getChoiceName method takes an integer representing the user's or computer's choice and returns the corresponding name (Rock, Paper, or Scissors). We use a switch statement to match the input choice with the appropriate name.</p>
+
+                                        <p><strong>Step 4: Define determineWinner Method</strong></p>
+                                        <pre><div><div><code>    private static int determineWinner(int userChoice, int computerChoice) {
+        // Returns: 0 for tie, 1 for user win, 2 for computer win
+        
+        if (userChoice == computerChoice) {
+            return 0; // Tie
+        }
+        
+        if ((userChoice == 1 &amp;&amp; computerChoice == 3) ||
+            (userChoice == 2 &amp;&amp; computerChoice == 1) ||
+            (userChoice == 3 &amp;&amp; computerChoice == 2)) {
+            return 1; // User wins
+        }
+        
+        return 2; // Computer wins
+    }
+}
+</code></div></div></pre>
+                                        <p>The determineWinner method takes two integer parameters: userChoice and computerChoice. It returns an integer value to indicate the result: 0 for a tie, 1 for a user win, and 2 for a computer win. The method uses nested if and else if statements to determine the winner based on the choices made by the user and the computer.</p>
+
+                                        <p><strong>Step 5: Complete Code</strong>Here&apos;s the complete code for the rock-paper-scissors game:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+import java.util.Random;
+
+public class RockPaperScissorsGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        
+        System.out.println(&quot;Welcome to Rock-Paper-Scissors Game!&quot;);
+        
+        while (true) {
+            // Code from Step 2
+        }
+    }
+    
+    private static String getChoiceName(int choice) {
+        // Code from Step 3
+    }
+    
+    private static int determineWinner(int userChoice, int computerChoice) {
+        // Code from Step 4
+    }
+}
+</code></div></div></pre>
+                                        <p><strong>Running the Program:</strong></p>
+                                        <ol>
+                                            <li>Create a file named <code>RockPaperScissorsGame.java</code>.</li>
+                                            <li>Copy and paste the complete code into the file.</li>
+                                            <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                            <li>Compile the code: <code>javac RockPaperScissorsGame.java</code></li>
+                                            <li>Run the program: <code>java RockPaperScissorsGame</code></li>
+                                        </ol>
+                                        <p><strong>Playing the Game:</strong></p>
+                                        <ul>
+                                            <li>The program will display a menu for the user to choose rock, paper, or scissors.</li>
+                                            <li>The computer&apos;s choice will be randomly generated.</li>
+                                            <li>The winner of the round will be determined and announced.</li>
+                                            <li>You can choose to quit the game by selecting option 4.</li>
+                                        </ul>
+                                        <p><strong>Output Example:</strong>For example, you might see:</p>
+                                        <pre><div><div><code>Welcome to Rock-Paper-Scissors Game!
+
+Choose:
+1. Rock
+2. Paper
+3. Scissors
+4. Quit
+Enter your choice: 2
+
+Computer chooses: Rock
+You choose: Paper
+You win!
+</code></div></div></pre>
+                                        <p><strong>Note:</strong> This program demonstrates the basic concept of creating a rock-paper-scissors game in Java. You can build upon this foundation to enhance the game&apos;s features and interactivity.</p>
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/RockPaperScissorsGame" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>17. Word Count: </strong>Write a program that counts the number of words in a given sentence.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(17)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content17">
+                                        <p>Certainly! Let&apos;s create a Java program that counts the number of words in a given sentence. I&apos;ll break down each step and explain in detail:</p>
+                                        <p><strong>Step 1: Import Required Libraries</strong></p>
+                                        <pre><div><div><code>import java.util.Scanner;
+</code></div></div></pre>
+                                        <p>Here, we import the <code>Scanner</code> class to read user input.</p>
+                                        <p><strong>Step 2: Create the Main Class</strong></p>
+                                        <pre><div><div><code>public class WordCountProgram {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(&quot;Enter a sentence:&quot;);
+        String sentence = scanner.nextLine();
+        
+        int wordCount = countWords(sentence);
+        System.out.println(&quot;Number of words: &quot; + wordCount);
+        
+        scanner.close();
+    }
+</code></div></div></pre>
+                                        <p>In this step, we set up the main class. We create a <code>Scanner</code> object to read user input. The user is prompted to enter a sentence using <code>System.out.println(&quot;Enter a sentence:&quot;)</code>. We then read the input sentence using <code>scanner.nextLine()</code>.</p>
+                                        <p><strong>Step 3: Define countWords Method</strong></p>
+                                        <pre><div><div><code>    private static int countWords(String sentence) {
+        if (sentence.isEmpty()) {
+            return 0; // Empty sentence has 0 words
+        }
+        
+        String[] words = sentence.split(&quot; &quot;);
+        return words.length;
+    }
+</code></div></div></pre>
+                                        <p>The <code>countWords</code> method takes a string parameter <code>sentence</code> and returns the number of words in that sentence. We start by checking if the sentence is empty. If it&apos;s empty, we return 0 words. Otherwise, we split the sentence into words using the <code>split(&quot; &quot;)</code> method, which splits the sentence whenever a space is encountered. We return the length of the resulting array, which gives us the number of words.</p>
+                                        <p><strong>Step 4: Complete Code</strong>Here&apos;s the complete code for the word count program:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class WordCountProgram {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(&quot;Enter a sentence:&quot;);
+        String sentence = scanner.nextLine();
+        
+        int wordCount = countWords(sentence);
+        System.out.println(&quot;Number of words: &quot; + wordCount);
+        
+        scanner.close();
+    }
+    
+    private static int countWords(String sentence) {
+        if (sentence.isEmpty()) {
+            return 0; // Empty sentence has 0 words
+        }
+        
+        String[] words = sentence.split(&quot; &quot;);
+        return words.length;
+    }
+}
+</code></div></div></pre>
+                                        <p><strong>Running the Program:</strong></p>
+                                        <ol>
+                                            <li>Create a file named <code>WordCountProgram.java</code>.</li>
+                                            <li>Copy and paste the complete code into the file.</li>
+                                            <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                            <li>Compile the code: <code>javac WordCountProgram.java</code></li>
+                                            <li>Run the program: <code>java WordCountProgram</code></li>
+                                        </ol>
+                                        <p><strong>Using the Program:</strong></p>
+                                        <ul>
+                                            <li>When you run the program, it will prompt you to enter a sentence.</li>
+                                            <li>After entering the sentence, it will display the number of words in the sentence.</li>
+                                        </ul>
+                                        <p><strong>Output Example:</strong>For example, you might see:</p>
+                                        <pre><div><div><code>Enter a sentence:
+Hello world! This is a sample sentence.
+Number of words: 7
+</code></div></div></pre>
+                                        <p><strong>Note:</strong> This program demonstrates the basic concept of counting words in a sentence using Java. You can enhance this program further, accounting for punctuation and special cases, as needed.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/WordCountProgram" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>18. Temperature Converter: </strong>Create a program that converts temperatures between Fahrenheit and Celsius.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(18)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content18">
+                                        <p>Let&apos;s create a Java program that converts temperatures between Fahrenheit and Celsius. I&apos;ll explain each step in detail:</p>
+                                        <p><strong>Step 1: Import Required Libraries</strong></p>
+                                        <pre><div><div><code>import java.util.Scanner;
+</code></div></div></pre>
+                                        <p>Here, we import the <code>Scanner</code> class to read user input.</p>
+                                        <p><strong>Step 2: Create the Main Class</strong></p>
+                                        <pre><div><div><code>public class TemperatureConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(&quot;Temperature Converter&quot;);
+        System.out.println(&quot;1. Fahrenheit to Celsius&quot;);
+        System.out.println(&quot;2. Celsius to Fahrenheit&quot;);
+        System.out.print(&quot;Enter your choice (1 or 2): &quot;);
+        int choice = scanner.nextInt();
+        
+        if (choice == 1) {
+            // Fahrenheit to Celsius conversion logic
+        } else if (choice == 2) {
+            // Celsius to Fahrenheit conversion logic
+        } else {
+            System.out.println(&quot;Invalid choice.&quot;);
+        }
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                        <p>In this step, we set up the main class. We create a <code>Scanner</code> object to read user input. The user is presented with a menu to choose between converting from Fahrenheit to Celsius (choice 1) or from Celsius to Fahrenheit (choice 2). The user&apos;s choice is stored in the <code>choice</code> variable.</p>
+                                        <p><strong>Step 3: Fahrenheit to Celsius Conversion Logic</strong></p>
+                                        <pre><div><div><code>            System.out.print(&quot;Enter temperature in Fahrenheit: &quot;);
+            double fahrenheit = scanner.nextDouble();
+            
+            double celsius = (fahrenheit - 32) * 5 / 9;
+            System.out.println(&quot;Temperature in Celsius: &quot; + celsius);
+</code></div></div></pre>
+                                        <p>If the user chooses option 1 (Fahrenheit to Celsius), we prompt the user to enter the temperature in Fahrenheit using <code>System.out.print(&quot;Enter temperature in Fahrenheit: &quot;)</code> and read the input using <code>scanner.nextDouble()</code>. We then apply the Fahrenheit to Celsius conversion formula and display the result.</p>
+                                        <p><strong>Step 4: Celsius to Fahrenheit Conversion Logic</strong></p>
+                                        <pre><div><div><code>            System.out.print(&quot;Enter temperature in Celsius: &quot;);
+            double celsius = scanner.nextDouble();
+            
+            double fahrenheit = (celsius * 9 / 5) + 32;
+            System.out.println(&quot;Temperature in Fahrenheit: &quot; + fahrenheit);
+</code></div></div></pre>
+                                        <p>If the user chooses option 2 (Celsius to Fahrenheit), we prompt the user to enter the temperature in Celsius and read the input. We then apply the Celsius to Fahrenheit conversion formula and display the result.</p>
+                                        <p><strong>Step 5: Complete Code</strong>Here&apos;s the complete code for the temperature converter program:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class TemperatureConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println(&quot;Temperature Converter&quot;);
+        System.out.println(&quot;1. Fahrenheit to Celsius&quot;);
+        System.out.println(&quot;2. Celsius to Fahrenheit&quot;);
+        System.out.print(&quot;Enter your choice (1 or 2): &quot;);
+        int choice = scanner.nextInt();
+        
+        if (choice == 1) {
+            System.out.print(&quot;Enter temperature in Fahrenheit: &quot;);
+            double fahrenheit = scanner.nextDouble();
+            
+            double celsius = (fahrenheit - 32) * 5 / 9;
+            System.out.println(&quot;Temperature in Celsius: &quot; + celsius);
+        } else if (choice == 2) {
+            System.out.print(&quot;Enter temperature in Celsius: &quot;);
+            double celsius = scanner.nextDouble();
+            
+            double fahrenheit = (celsius * 9 / 5) + 32;
+            System.out.println(&quot;Temperature in Fahrenheit: &quot; + fahrenheit);
+        } else {
+            System.out.println(&quot;Invalid choice.&quot;);
+        }
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                        <p><strong>Running the Program:</strong></p>
+                                        <ol>
+                                            <li>Create a file named <code>TemperatureConverter.java</code>.</li>
+                                            <li>Copy and paste the complete code into the file.</li>
+                                            <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                            <li>Compile the code: <code>javac TemperatureConverter.java</code></li>
+                                            <li>Run the program: <code>java TemperatureConverter</code></li>
+                                        </ol>
+                                        <p><strong>Using the Program:</strong></p>
+                                        <ul>
+                                            <li>When you run the program, you&apos;ll be prompted to choose between Fahrenheit to Celsius conversion and Celsius to Fahrenheit conversion.</li>
+                                            <li>After making your choice, enter the temperature value as indicated.</li>
+                                            <li>The program will then display the converted temperature.</li>
+                                        </ul>
+                                        <p><strong>Output Example:</strong>For example, you might see:</p>
+                                        <pre><div><div><code>Temperature Converter
+1. Fahrenheit to Celsius
+2. Celsius to Fahrenheit
+Enter your choice (1 or 2): 1
+Enter temperature in Fahrenheit: 32
+Temperature in Celsius: 0.0
+</code></div></div></pre>
+                                        <p><strong>Note:</strong> This program demonstrates the basic concept of temperature conversion between Fahrenheit and Celsius using Java. You can enhance this program further, adding error handling for invalid inputs and improving the user experience.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/TemperatureConverter" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p><strong>19. Leap Year Checker: </strong>Write a program that checks if a given year is a leap year.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(19)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content19">
+                                        <p>Let&apos;s create a Java program that checks if a given year is a leap year. I&apos;ll explain each step in detail:</p>
+                                        <p><strong>Step 1: Import Required Libraries</strong></p>
+                                        <pre><div><div><code>import java.util.Scanner;
+</code></div></div></pre>
+                                        <p>Here, we import the <code>Scanner</code> class to read user input.</p>
+                                        <p><strong>Step 2: Create the Main Class</strong></p>
+                                        <pre><div><div><code>public class LeapYearChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print(&quot;Enter a year: &quot;);
+        int year = scanner.nextInt();
+        
+        if (isLeapYear(year)) {
+            System.out.println(year + &quot; is a leap year.&quot;);
+        } else {
+            System.out.println(year + &quot; is not a leap year.&quot;);
+        }
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                        <p>In this step, we set up the main class. We create a <code>Scanner</code> object to read user input. The user is prompted to enter a year using <code>System.out.print(&quot;Enter a year: &quot;)</code>, and we read the input using <code>scanner.nextInt()</code>.</p>
+                                        <p><strong>Step 3: Define isLeapYear Method</strong></p>
+                                        <pre><div><div><code>    private static boolean isLeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 != 0 || year % 400 == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+</code></div></div></pre>
+                                        <p>The <code>isLeapYear</code> method takes an integer parameter <code>year</code> and returns a boolean indicating whether the year is a leap year or not. We use the leap year rules: if the year is divisible by 4, it&apos;s a potential leap year. However, if it&apos;s divisible by 100 but not by 400, it&apos;s not a leap year. Otherwise, it&apos;s a leap year.</p>
+                                        <p><strong>Step 4: Complete Code</strong>Here&apos;s the complete code for the leap year checker program:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class LeapYearChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print(&quot;Enter a year: &quot;);
+        int year = scanner.nextInt();
+        
+        if (isLeapYear(year)) {
+            System.out.println(year + &quot; is a leap year.&quot;);
+        } else {
+            System.out.println(year + &quot; is not a leap year.&quot;);
+        }
+        
+        scanner.close();
+    }
+    
+    private static boolean isLeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 != 0 || year % 400 == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+</code></div></div></pre>
+                                        <p><strong>Running the Program:</strong></p>
+                                        <ol>
+                                            <li>Create a file named <code>LeapYearChecker.java</code>.</li>
+                                            <li>Copy and paste the complete code into the file.</li>
+                                            <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                            <li>Compile the code: <code>javac LeapYearChecker.java</code></li>
+                                            <li>Run the program: <code>java LeapYearChecker</code></li>
+                                        </ol>
+                                        <p><strong>Using the Program:</strong></p>
+                                        <ul>
+                                            <li>When you run the program, you&apos;ll be prompted to enter a year.</li>
+                                            <li>The program will then display whether the entered year is a leap year or not.</li>
+                                        </ul>
+                                        <p><strong>Output Example:</strong>For example, you might see:</p>
+                                        <pre><div><div><code>Enter a year: 2024
+2024 is a leap year.
+</code></div></div></pre>
+                                        <p><strong>Note:</strong> This program demonstrates the basic concept of checking leap years using Java. You can enhance this program further, adding error handling for invalid inputs and refining the logic for leap year determination.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/LeapYearChecker" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+
                                     <p><strong>20. Sum of Digits: </strong>Write a program that calculates the sum of the digits of a given number.</p>
+                                    
+                                    <ul class="actions">
+										<li><a href="javascript:void(0)" class="button" onclick="toggleContent(20)">Show Step</a></li>
+                                        
+									</ul>
+                                    <div class="hidden-content" id="content20">
+                                        <p>Let&apos;s create a Java program that calculates the sum of the digits of a given number. I&apos;ll explain each step in detail:</p>
+                                        <p><strong>Step 1: Import Required Libraries</strong></p>
+                                        <pre><div><div><code>import java.util.Scanner;
+</code></div></div></pre>
+                                        <p>Here, we import the <code>Scanner</code> class to read user input.</p>
+                                        <p><strong>Step 2: Create the Main Class</strong></p>
+                                        <pre><div><div><code>public class DigitSumCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print(&quot;Enter a number: &quot;);
+        int number = scanner.nextInt();
+        
+        int sum = calculateDigitSum(number);
+        System.out.println(&quot;Sum of digits: &quot; + sum);
+        
+        scanner.close();
+    }
+}
+</code></div></div></pre>
+                                        <p>In this step, we set up the main class. We create a <code>Scanner</code> object to read user input. The user is prompted to enter a number using <code>System.out.print(&quot;Enter a number: &quot;)</code>, and we read the input using <code>scanner.nextInt()</code>.</p>
+                                        <p><strong>Step 3: Define calculateDigitSum Method</strong></p>
+                                        <pre><div><div><code>    private static int calculateDigitSum(int number) {
+        int sum = 0;
+        while (number != 0) {
+            int digit = number % 10;
+            sum += digit;
+            number /= 10;
+        }
+        return sum;
+    }
+</code></div></div></pre>
+                                        <p>The <code>calculateDigitSum</code> method takes an integer parameter <code>number</code> and returns an integer representing the sum of its digits. We use a <code>while</code> loop to repeatedly extract the last digit of the number (<code>number % 10</code>), add it to the <code>sum</code>, and then remove that digit from the number (<code>number /= 10</code>).</p>
+                                        <p><strong>Step 4: Complete Code</strong>Here&apos;s the complete code for the digit sum calculator program:</p>
+                                        <pre><div><div><code>import java.util.Scanner;
+
+public class DigitSumCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print(&quot;Enter a number: &quot;);
+        int number = scanner.nextInt();
+        
+        int sum = calculateDigitSum(number);
+        System.out.println(&quot;Sum of digits: &quot; + sum);
+        
+        scanner.close();
+    }
+    
+    private static int calculateDigitSum(int number) {
+        int sum = 0;
+        while (number != 0) {
+            int digit = number % 10;
+            sum += digit;
+            number /= 10;
+        }
+        return sum;
+    }
+}
+</code></div></div></pre>
+                                        <p><strong>Running the Program:</strong></p>
+                                        <ol>
+                                            <li>Create a file named <code>DigitSumCalculator.java</code>.</li>
+                                            <li>Copy and paste the complete code into the file.</li>
+                                            <li>Open a terminal/command prompt and navigate to the folder containing the file.</li>
+                                            <li>Compile the code: <code>javac DigitSumCalculator.java</code></li>
+                                            <li>Run the program: <code>java DigitSumCalculator</code></li>
+                                        </ol>
+                                        <p><strong>Using the Program:</strong></p>
+                                        <ul>
+                                            <li>When you run the program, you&apos;ll be prompted to enter a number.</li>
+                                            <li>The program will then display the sum of the digits of the entered number.</li>
+                                        </ul>
+                                        <p><strong>Output Example:</strong>For example, you might see:</p>
+                                        <pre><div><div><code>Enter a number: 12345
+Sum of digits: 15
+</code></div></div></pre>
+                                        <p><strong>Note:</strong> This program showcases the fundamental concept of calculating the sum of digits using Java. You can build on this program, adding error handling for negative numbers and refining user experience.</p>
+
+                                        <ul class="actions">
+                                                <li><a href="https://replit.com/@JacksonYu92/DigitSumCalculator" class="button" target="_blank">Show Code</a></li>
+                                            </ul>
+                                            <button onclick="toggleContent(0)">Hide Step</button>
+                                        <br><br>
+                                    </div>
+                                    
                                     <p>These exercises cover a range of topics and difficulty levels. As you work through them, you&apos;ll become more comfortable with Java programming concepts. Remember to break down each problem into smaller steps and take your time to understand the solutions. Happy coding!</p>
                                     
 
